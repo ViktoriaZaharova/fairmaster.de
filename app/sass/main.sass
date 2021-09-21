@@ -1,0 +1,932 @@
+@import "fonts"
+@import "vars"
+
+*
+  -webkit-box-sizing: border-box
+  -moz-box-sizing: border-box
+  box-sizing: border-box
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+
+  &:before, &:after
+    -webkit-box-sizing: border-box
+    -moz-box-sizing: border-box
+    box-sizing: border-box
+
+*::-webkit-input-placeholder
+  color: #666
+  opacity: 1
+
+*:-moz-placeholder
+  color: #666
+  opacity: 1
+
+*::-moz-placeholder
+  color: #666
+  opacity: 1
+
+*:-ms-input-placeholder
+  color: #666
+  opacity: 1
+
+//body input:focus:required:invalid,
+//body textarea:focus:required:invalid
+//  color: #666
+//
+//body input:required:valid,
+//body textarea:required:valid
+//  color: #666
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
+  margin: 0
+  padding: 0
+  border: 0
+  font-size: 100%
+  font: inherit
+  vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section
+  display: block
+
+ol, ul
+  list-style: none
+
+blockquote, q
+  quotes: none
+
+blockquote:before, blockquote:after, q:before, q:after
+  content: ''
+  content: none
+
+table
+  border-collapse: collapse
+  border-spacing: 0
+
+body
+  font-size: 16px
+  min-width: 320px
+  position: relative
+  line-height: normal
+  font-family: $default-font
+  font-weight: normal
+  background: #fff
+
+html, body
+  overflow-x: hidden
+  //height: 100%
+
+img
+  display: block
+  max-width: 100%
+  height: auto
+
+.text-center
+  text-align: center
+
+a
+  display: block
+  text-decoration: none
+  transition: .3s ease
+  outline: none
+
+  &:hover, &:focus
+    text-decoration: none
+
+input, textarea, select
+  outline: none
+  box-shadow: none
+  appearance: none
+  box-sizing: border-box
+  font-family: $default-font
+  height: 36px
+  width: 100%
+  border: 1px solid #FF8800
+    radius: 5px
+  background: #ffffff
+  padding: 0 10px
+  color: #000
+  font-size: 18px
+
+  &::placeholder
+    color: #000
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+select
+  cursor: pointer
+  appearance: none
+
+label
+  display: block
+  width: 100%
+
+.btn, button
+  outline: none
+  box-shadow: none
+  padding: 0
+  margin: 0
+  border: none
+    radius: 0
+  font-family: $default-font
+  font-size: 16px
+
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.btn
+  display: flex
+  align-items: center
+  justify-content: center
+  text-align: center
+
+
+.btn-accent
+  background: $accent
+  color: #fff
+  height: 27px
+  max-width: 146px
+  width: 100%
+  border-radius: 4px
+  &:hover
+    color: #fff
+    background: $btn
+
+.wrapper
+  display: flex
+  flex-direction: column
+  height: 100%
+
+.content
+  flex: 1 0 auto
+
+.container
+  max-width: 920px
+
+.svg-icon
+  display: inline-block
+  width: 100%
+  height: 100%
+
+h1
+  width: 100%
+  font-weight: bold
+  font-size: 24px
+  margin: 0 0 4px
+
+h2
+  font-size: 24px
+  font-weight: bold
+
+h3
+  font-size: 20px
+  width: 100%
+
+strong
+  font-weight: bold
+
+.box-text
+  font-size: 14px
+  line-height: 16px
+
+//header
+.header-top
+  padding: 5px 0
+  font-size: 12px
+  border-bottom: 2px solid $accent
+
+.header-center
+  padding: 23px 0 17px
+
+.header-box
+  display: flex
+  align-items: center
+  font-size: 18px
+  margin: 0 0 0 auto
+
+.header-box__links
+  color: #000
+
+  &:after
+    content: '|'
+    display: inline-block
+    margin: 0 5px
+
+  &:last-child
+    &:after
+      display: none
+
+  &:hover
+    color: $accent
+
+.contact-item
+  margin: 0 0 0 auto
+
+.logo
+  color: $accent
+  font-size: 48px
+  margin: 0 16px 0 0
+
+  &:hover
+    color: #000
+
+.form-search
+  max-width: 375px
+  width: 100%
+  position: relative
+  border: 2px solid #FF8800
+    radius: 6px
+  overflow: hidden
+
+  button
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    background: $accent
+    width: 92px
+
+    &:hover
+      background: #db6e00
+
+    .svg-icon
+      stroke: #000
+      width: 24px
+      height: 24px
+      fill: none
+
+  input
+    height: 55px
+    padding: 0 92px 0 18px
+    border: none
+
+.header-bottom
+  padding: 11px 0 0
+
+.menu
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+  font-size: 24px
+  a
+    color: $accent
+    &:hover
+      color: #000
+
+
+.btn-catalog
+  display: flex
+  align-items: center
+  white-space: nowrap
+  .svg-icon
+    width: 24px
+    min-width: 24px
+    height: 24px
+    stroke: $accent
+    margin: 0 6px 0 0
+
+.btn-burger
+  display: none
+  align-items: center
+  justify-content: center
+  width: 24px
+  height: 24px
+  margin: 0 0 0 10px
+  stroke: $accent
+
+//footer
+footer
+  flex: 0 0 auto
+
+.footer-bottom
+  padding: 8px 0
+  background: #000
+  text-align: center
+  border-top: 2px solid #FF8800
+  color: #fff
+
+.copyright
+  font-size: 14px
+
+.list-payment
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+
+  li
+    margin: 0 8px 0 0
+
+    &:last-child
+      margin: 0
+
+    a
+      display: flex
+      align-items: center
+      justify-content: center
+      max-width: 62px
+      width: 100%
+
+.menu-footer
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-around
+  flex-wrap: wrap
+  font-size: 18px
+
+  li
+    margin: 0 0 5px
+
+    a
+      color: #fff
+
+      &:hover
+        color: $accent
+
+.footer-center
+  background: #425A83
+  padding: 12px 0 17px
+
+.footer-top
+  padding: 12px 0 15px
+  background: #89A6D7
+
+.box-subscribe
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+
+  h3
+    width: fit-content
+    color: $accent
+    font-size: 30px
+    margin: 0 13px 0 0
+
+.form-subscribe
+  position: relative
+  border: 2px solid #FF8800
+    radius: 6px
+  max-width: 444px
+  width: 100%
+  overflow: hidden
+
+  input
+    border: none
+    padding: 0 90px 0 17px
+    color: #000
+    background: transparent
+
+    &::placeholder
+      color: #000
+
+  button
+    position: absolute
+    right: 0
+    top: 0
+    height: 100%
+    background: $accent
+    color: #fff
+    font-size: 18px
+    padding: 0 29px
+
+
+//contacts
+.contacts
+  padding: 63px 0
+  h3
+    margin: 0 0 10px
+
+.form-contacts
+  display: flex
+  flex-direction: column
+  align-items: flex-end
+  label
+    display: flex
+    align-items: flex-start
+    justify-content: flex-end
+    flex-wrap: wrap
+    margin: 0 0 10px
+    input
+      max-width: 236px
+      margin: 0 0 0 16px
+    textarea
+      height: 201px
+      max-width: 236px
+      padding: 10px
+      margin: 0 0 0 16px
+      color: #000
+      &::placeholder
+        color: #000
+
+.input-title
+  font-size: 18px
+  margin: 5px 0 0
+  sup
+    color: #FF0000
+
+.necessarily
+  margin: 10px 0
+
+.contacts-content
+  padding: 10px
+
+.contacts-info
+  margin: 12px 0 0
+
+.contacts-content__box
+  margin: 20px 0 0
+  h3
+    margin: 0
+
+.contacts-info
+  padding: 0 0 0 20px
+  font-size: 14px
+
+.schedule
+  margin: 15px 0 0
+
+.box-text
+  font-size: 14px
+  line-height: 16px
+
+.mobile-menu
+  display: none
+  position: fixed
+  right: 0
+  top: 0
+  z-index: 5
+  background: #fff
+  height: 100%
+  max-width: 280px
+  width: 100%
+  padding: 30px
+  box-shadow: 0 0 10px rgba(0,0,0,.5)
+  .menu
+    flex-wrap: wrap
+    flex-direction: column
+    align-items: flex-start
+    font-size: 18px
+    li
+      margin: 0 0 10px
+
+.btn-close
+  width: 20px
+  height: 20px
+  position: relative
+  margin: 0 0 20px auto
+  cursor: pointer
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 10px
+    top: 0
+    width: 2px
+    height: 100%
+    background: $accent
+  &:before
+    transform: rotate(45deg)
+  &:after
+    transform: rotate(135deg)
+
+//profile page
+.map-profile
+  width: 100%
+  height: 280px
+  margin: 16px 0 0
+  iframe
+    width: 100%
+    height: 100%
+
+
+.list-social
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    margin: 0 13px 0 0
+    &:last-child
+      margin: 0
+    a
+      width: 30px
+      height: 30px
+      fill: none
+      display: flex
+      align-items: center
+      justify-content: center
+
+.share
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  width: 100%
+  .svg-icon
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 9px 0 0
+    fill: none
+  h3
+    font-size: 20px
+    width: fit-content
+    margin: 0 5px 0 0
+    font-weight: 500
+
+.profile-box
+  &__footer
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 40px 0 0
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 8px
+  &__top
+    width: calc(100% - 94px)
+    padding: 0 0 0 12px
+    h2
+      margin: 0 0 4px
+  .box-text
+    color: #000
+
+
+.list-rating
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  li
+    width: 24px
+    height: 24px
+    min-width: 24px
+    display: flex
+    align-items: center
+    justify-content: center
+
+.img-avatar
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  width: 94px
+  height: 94px
+  min-width: 94px
+  border-radius: 50%
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+
+.profile-page
+  padding: 27px 0 24px
+
+.profile-info
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    h3
+      width: fit-content
+      font-size: 24px
+      font-weight: bold
+      margin: 0 auto 0 0
+  .contacts-info
+    padding: 0
+    margin: 4px 0 14px
+
+.profile-info__links
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 24px
+  color: #000
+  margin: 0 12px 0 0
+  &:last-child
+    margin: 0
+  .svg-icon
+    fill: none
+    width: 24px
+    height: 24px
+    min-width: 24px
+    margin: 0 8px 0 0
+  &:hover
+    color: $accent
+
+//publication
+.publication
+  margin: 0 0 29px
+  h2
+    font-weight: 400
+    margin: 0 0 9px
+
+.publication-box__max
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  margin: 0 0 24px
+  width: 100%
+  height: 120px
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.publication-box__min
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  height: 35px
+  width: 100%
+  margin: 0 0 16px
+  background: linear-gradient(0deg, #4A4A4A, #4A4A4A), #4A4A4A
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.btn-publication
+  width: 100%
+  max-width: none
+  height: 52px
+  font-size: 24px
+  font-weight: bold
+
+//.profile-reviews
+.profile-reviews
+  margin: 0 0 16px
+  h2
+    font-weight: normal
+    width: auto
+    margin: 0 10px 0 0
+
+.profile-reviews__head
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 9px
+
+.reviews-box
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  margin: 0 0 22px
+  &__photo
+    width: 54px
+    height: 54px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 54px)
+    padding: 0 0 0 8px
+  .list-rating
+    li
+      width: 14px
+      height: 14px
+      min-width: 14px
+  h3
+    width: auto
+    margin: 0 14px 0 0
+    font-size: 14px
+    font-weight: bold
+    span
+      font-weight: normal
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+    margin: 0 0 3px
+
+.btn-reviews
+  margin: 0 0 0 18px
+  font-size: 18px
+  max-width: none
+  padding: 8px 12px
+  width: fit-content
+  height: 37px
+
+.publication-page
+  padding: 23px 0 26px
+  .publication-box
+    width: 100%
+    display: flex
+    align-items: flex-start
+    flex-wrap: wrap
+  .publication-box__max
+    height: 290px
+    width: calc(100% - 80px)
+    padding: 0 10px 0 0
+    margin: 0 0 12px
+  .profile-box__footer
+    margin: 0
+  .profile-box
+    margin: 20px 0 0
+    border: 1px solid #FF8800
+      radius: 5px
+    width: 100%
+    .btn
+      width: 100%
+      max-width: none
+      height: 39px
+      font-size: 24px
+      font-weight: bold
+    .profile-box__head
+      margin: 0
+      padding: 10px 9px 8px
+    .profile-box__body
+      padding: 0 9px 12px
+      font-weight: bold
+
+
+.price
+  margin: 5px 0 16px
+  font-weight: bold
+  font-size: 36px
+  span
+    color: $accent
+    font-size: 18px
+
+.publication-box__wrap
+  display: flex
+  flex-direction: column
+  align-items: flex-start
+  width: 80px
+  .publication-box__min
+    height: 71px
+    margin: 0 0 15px
+
+//search-page
+.search-page
+  padding: 21px 0 40px
+
+.form-filter
+  border: 1px solid #FF8800
+    radius: 6px
+  background: #fff
+  padding: 22px 15px 16px 9px
+
+
+.select-drop
+  border: none
+  width: fit-content
+  height: auto
+  font-size: 20px
+  background: url("../img/arrow-select.svg") left center no-repeat
+    size: 24px
+  padding: 0 0 0 28px
+  margin: 10px 0 0
+
+.form-filter-item
+  display: flex
+  align-items: stretch
+  flex-wrap: wrap
+  .label-inp
+    width: calc(100% - 99px)
+  input
+    border-radius: 5px 0px 0px 5px
+
+.label-select
+  margin: 0 0 0 -1px
+  width: 99px
+  select
+    border: 1px solid #FF8800
+    border-radius: 0px 5px 5px 0px
+    background: rgba(0, 0, 0, 0.1) url("../img/arrow-select.svg") calc(100% - 5px) center no-repeat
+      size: 24px
+    padding: 0 24px 0 6px
+
+.form-filter-price
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  justify-content: space-between
+  font-size: 18px
+
+  label
+    width: 75px
+  input
+    text-align: center
+    padding: 0
+    font-size: 18px
+    color: rgba(0, 0, 0, 0.7)
+    &::placeholder
+      color: rgba(0, 0, 0, 0.7)
+
+.filter-result-wrapper
+  margin: 10px 0
+  padding: 10px
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+
+.filter-result
+  font-size: 18px
+
+.nav-tabs
+  border: none
+  .nav-item
+    margin: 0 14px 0 0
+    &:last-child
+      margin: 0
+  .nav-link
+    border: none
+      radius: 0
+    width: 24px
+    min-width: 24px
+    height: 24px
+    padding: 0
+    fill: none
+    display: flex
+    align-items: center
+    justify-content: center
+
+.card-product
+  width: 100%
+  margin: 0 0 20px
+  border: 1px solid #FF8800
+    radius: 6px
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  padding: 23px 27px 23px 14px
+  &__img
+    width: 194px
+    height: 147px
+    display: flex
+    align-items: center
+    justify-content: center
+    overflow: hidden
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: calc(100% - 194px)
+    padding: 0 0 0 13px
+  h3
+    font-weight: bold
+    font-size: 24px
+  &__head
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+  .price
+    margin: 0
+  &__content
+    padding: 4px 0 10px
+
+    .box-text
+      font-size: 12px
+  &:last-child
+    margin: 0
+
+.rating-wrapper
+  display: flex
+  align-items: center
+
+.rating-val
+  color: #888888
+  font-size: 24px
+  font-weight: bold
+  margin: 0 0 0 27px
+
+.card-product-col
+  padding: 10px
+
+  .card-product__img
+    width: 100%
+    height: 219px
+  .card-product__body
+    width: 100%
+    padding: 10px 0 0
+  .card-product__sub-box
+    margin: 10px 0 4px
+
+
+@import "media"
+// Всегда в конце
