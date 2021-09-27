@@ -74,7 +74,7 @@ body
 
 html, body
   overflow-x: hidden
-  //height: 100%
+  height: 100%
 
 img
   display: block
@@ -154,6 +154,16 @@ label
   &:hover
     color: #fff
     background: $btn
+
+.btn-red
+  color: #fff
+  background: #FF0000
+  height: 27px
+  max-width: 146px
+  border-radius: 4px
+  &:hover
+    background: $accent
+    color: #fff
 
 .wrapper
   display: flex
@@ -926,6 +936,166 @@ footer
     padding: 10px 0 0
   .card-product__sub-box
     margin: 10px 0 4px
+
+//user-page
+.user-page
+  margin: 37px 0
+  h1
+    margin: 0 0 10px
+    font-weight: 300
+    font-size: 22px
+    line-height: 26px
+  h3
+    margin: 0 0 10px
+    font-size: 14px
+    font-weight: normal
+    span
+      font-weight: 300
+  .card-product
+    .price
+      font-size: 26px
+      span
+        font-size: 20px
+    .list-rating
+      li
+        width: 17px
+        height: 17px
+        min-width: 17px
+    .rating-val
+      margin: 0 0 0 10px
+      font-size: 20px
+    h3
+      font-size: 20px
+      margin: 0
+    .profile-info__links
+      font-size: 18px
+
+
+.user-menu-title
+  font-size: 20px
+  padding: 0 0 6px
+  border-bottom: 1px solid $accent
+  margin: 0 0 4px
+
+.user-menu
+  li
+    a
+      font-size: 18px
+      color: #000
+      line-height: 21px
+      &:hover
+        color: $accent
+
+.news-box
+  line-height: 16px
+  font-size: 14px
+  margin: 0 0 5px
+  &__top
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+  .date
+    font-size: 12px
+  h4
+    font-size: 16px
+
+.btn-add-news
+  margin: 0 0 0 auto
+
+.bookmarks-box
+  width: 100%
+  display: flex
+  align-items: center
+  margin: 0 0 11px
+  &__img
+    max-width: 51px
+    display: flex
+    align-items: center
+    img
+      width: 100%
+  &__body
+    width: calc(100% - 51px)
+    padding: 0 0 0 4px
+    display: flex
+    align-items: flex-start
+    justify-content: space-between
+    flex-wrap: wrap
+  .price
+    margin: 0
+    font-size: 16px
+    span
+      font-size: 12px
+  h3
+    margin: 0
+    font-size: 18px
+    font-weight: bold
+  .list-rating
+    li
+      width: 17px
+      height: 17px
+      min-width: 17px
+
+
+//information
+.information
+  width: 100%
+  margin: 10px 0 0
+  h3
+    font-size: 18px
+    font-weight: normal
+    margin: 0 0 8px
+
+.information-box
+  font-size: 14px
+  .btn
+    margin: 8px 0 0
+  .list-rating
+    li
+      min-width: 17px
+      width: 17px
+      height: 17px
+
+.list-number
+  counter-reset: item
+  li
+    display: flex
+    align-items: center
+
+    p
+      display: inline
+      width: fit-content
+    .list-rating
+      margin: 0 0 0 8px
+  >li
+    margin: 0 0 2px
+    &:before
+      content: counters(item, ".") ": "
+      counter-increment: item
+      display: inline-block
+      margin: 0 2px 0 0
+
+.form-user
+  label
+    max-width: none
+    input
+      margin: 0
+      max-width: none
+      font-size: 14px
+      font-weight: 300
+  h3
+    margin: 0 0 14px
+    font-size: 18px
+
+.delete-user
+
+  margin: 28px 0 0
+  h3
+    font-size: 18px
+    margin: 0 0 14px
+  .btn
+    margin: 0 0 0 auto
 
 
 @import "media"
