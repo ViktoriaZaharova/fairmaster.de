@@ -151,6 +151,7 @@ label
   max-width: 146px
   width: 100%
   border-radius: 4px
+
   &:hover
     color: #fff
     background: $btn
@@ -161,6 +162,7 @@ label
   height: 27px
   max-width: 146px
   border-radius: 4px
+
   &:hover
     background: $accent
     color: #fff
@@ -201,6 +203,9 @@ strong
 .box-text
   font-size: 14px
   line-height: 16px
+
+.w-100
+  width: 100%
 
 //header
 .header-top
@@ -282,8 +287,25 @@ strong
   align-items: flex-start
   justify-content: space-between
   font-size: 24px
+
+  li
+    display: flex
+    align-items: flex-start
+
+    &:after
+      content: '|'
+      display: inline-block
+      margin: 0 5px
+      color: $accent
+      vertical-align: top
+
+    &:last-child
+      &:after
+        display: none
+
   a
     color: $accent
+
     &:hover
       color: #000
 
@@ -292,6 +314,7 @@ strong
   display: flex
   align-items: center
   white-space: nowrap
+
   .svg-icon
     width: 24px
     min-width: 24px
@@ -409,6 +432,7 @@ footer
 //contacts
 .contacts
   padding: 63px 0
+
   h3
     margin: 0 0 10px
 
@@ -416,27 +440,32 @@ footer
   display: flex
   flex-direction: column
   align-items: flex-end
+
   label
     display: flex
     align-items: flex-start
     justify-content: flex-end
     flex-wrap: wrap
     margin: 0 0 10px
+
     input
       max-width: 236px
       margin: 0 0 0 16px
+
     textarea
       height: 201px
       max-width: 236px
       padding: 10px
       margin: 0 0 0 16px
       color: #000
+
       &::placeholder
         color: #000
 
 .input-title
   font-size: 18px
   margin: 5px 0 0
+
   sup
     color: #FF0000
 
@@ -451,6 +480,7 @@ footer
 
 .contacts-content__box
   margin: 20px 0 0
+
   h3
     margin: 0
 
@@ -476,12 +506,14 @@ footer
   max-width: 280px
   width: 100%
   padding: 30px
-  box-shadow: 0 0 10px rgba(0,0,0,.5)
+  box-shadow: 0 0 10px rgba(0, 0, 0, .5)
+
   .menu
     flex-wrap: wrap
     flex-direction: column
     align-items: flex-start
     font-size: 18px
+
     li
       margin: 0 0 10px
 
@@ -491,6 +523,7 @@ footer
   position: relative
   margin: 0 0 20px auto
   cursor: pointer
+
   &:before, &:after
     content: ''
     position: absolute
@@ -499,8 +532,10 @@ footer
     width: 2px
     height: 100%
     background: $accent
+
   &:before
     transform: rotate(45deg)
+
   &:after
     transform: rotate(135deg)
 
@@ -509,6 +544,7 @@ footer
   width: 100%
   height: 280px
   margin: 16px 0 0
+
   iframe
     width: 100%
     height: 100%
@@ -518,10 +554,13 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     margin: 0 13px 0 0
+
     &:last-child
       margin: 0
+
     a
       width: 30px
       height: 30px
@@ -535,12 +574,14 @@ footer
   align-items: center
   flex-wrap: wrap
   width: 100%
+
   .svg-icon
     width: 24px
     height: 24px
     min-width: 24px
     margin: 0 9px 0 0
     fill: none
+
   h3
     font-size: 20px
     width: fit-content
@@ -554,17 +595,21 @@ footer
     align-items: center
     flex-wrap: wrap
     margin: 40px 0 0
+
   &__head
     width: 100%
     display: flex
     align-items: center
     flex-wrap: wrap
     margin: 0 0 8px
+
   &__top
     width: calc(100% - 94px)
     padding: 0 0 0 12px
+
     h2
       margin: 0 0 4px
+
   .box-text
     color: #000
 
@@ -573,6 +618,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
+
   li
     width: 24px
     height: 24px
@@ -580,6 +626,11 @@ footer
     display: flex
     align-items: center
     justify-content: center
+    fill: $accent
+    stroke: $accent
+  .star0
+    fill: #ccc
+    stroke: #ccc
 
 .img-avatar
   display: flex
@@ -590,6 +641,7 @@ footer
   height: 94px
   min-width: 94px
   border-radius: 50%
+
   img
     width: 100%
     height: 100%
@@ -605,11 +657,13 @@ footer
     display: flex
     align-items: center
     flex-wrap: wrap
+
     h3
       width: fit-content
       font-size: 24px
       font-weight: bold
       margin: 0 auto 0 0
+
   .contacts-info
     padding: 0
     margin: 4px 0 14px
@@ -621,23 +675,33 @@ footer
   font-size: 24px
   color: #000
   margin: 0 12px 0 0
+
   &:last-child
     margin: 0
+
   .svg-icon
     fill: none
     width: 24px
     height: 24px
     min-width: 24px
     margin: 0 8px 0 0
+
   &:hover
     color: $accent
 
 //publication
 .publication
   margin: 0 0 29px
+
   h2
     font-weight: 400
     margin: 0 0 9px
+
+.publication-col
+  display: none
+
+  &:nth-child(-n+4)
+    display: block
 
 .publication-box__max
   display: flex
@@ -647,6 +711,7 @@ footer
   margin: 0 0 24px
   width: 100%
   height: 120px
+
   img
     width: 100%
     height: 100%
@@ -662,6 +727,7 @@ footer
   width: 100%
   margin: 0 0 16px
   background: linear-gradient(0deg, #4A4A4A, #4A4A4A), #4A4A4A
+
   img
     width: 100%
     height: 100%
@@ -677,6 +743,7 @@ footer
 //.profile-reviews
 .profile-reviews
   margin: 0 0 16px
+
   h2
     font-weight: normal
     width: auto
@@ -695,6 +762,7 @@ footer
   align-items: center
   flex-wrap: wrap
   margin: 0 0 22px
+
   &__photo
     width: 54px
     height: 54px
@@ -703,25 +771,31 @@ footer
     align-items: center
     justify-content: center
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     width: calc(100% - 54px)
     padding: 0 0 0 8px
+
   .list-rating
     li
       width: 14px
       height: 14px
       min-width: 14px
+
   h3
     width: auto
     margin: 0 14px 0 0
     font-size: 14px
     font-weight: bold
+
     span
       font-weight: normal
+
   &__top
     width: 100%
     display: flex
@@ -739,32 +813,39 @@ footer
 
 .publication-page
   padding: 23px 0 26px
+
   .publication-box
     width: 100%
     display: flex
     align-items: flex-start
     flex-wrap: wrap
+
   .publication-box__max
     height: 290px
     width: calc(100% - 80px)
     padding: 0 10px 0 0
     margin: 0 0 12px
+
   .profile-box__footer
     margin: 0
+
   .profile-box
     margin: 20px 0 0
     border: 1px solid #FF8800
       radius: 5px
     width: 100%
+
     .btn
       width: 100%
       max-width: none
       height: 39px
       font-size: 24px
       font-weight: bold
+
     .profile-box__head
       margin: 0
       padding: 10px 9px 8px
+
     .profile-box__body
       padding: 0 9px 12px
       font-weight: bold
@@ -774,6 +855,7 @@ footer
   margin: 5px 0 16px
   font-weight: bold
   font-size: 36px
+
   span
     color: $accent
     font-size: 18px
@@ -783,6 +865,7 @@ footer
   flex-direction: column
   align-items: flex-start
   width: 80px
+
   .publication-box__min
     height: 71px
     margin: 0 0 15px
@@ -812,14 +895,17 @@ footer
   display: flex
   align-items: stretch
   flex-wrap: wrap
+
   .label-inp
     width: calc(100% - 99px)
+
   input
     border-radius: 5px 0px 0px 5px
 
 .label-select
   margin: 0 0 0 -1px
   width: 99px
+
   select
     border: 1px solid #FF8800
     border-radius: 0px 5px 5px 0px
@@ -837,11 +923,13 @@ footer
 
   label
     width: 75px
+
   input
     text-align: center
     padding: 0
     font-size: 18px
     color: rgba(0, 0, 0, 0.7)
+
     &::placeholder
       color: rgba(0, 0, 0, 0.7)
 
@@ -858,10 +946,13 @@ footer
 
 .nav-tabs
   border: none
+
   .nav-item
     margin: 0 14px 0 0
+
     &:last-child
       margin: 0
+
   .nav-link
     border: none
       radius: 0
@@ -883,6 +974,7 @@ footer
   align-items: flex-start
   flex-wrap: wrap
   padding: 23px 27px 23px 14px
+
   &__img
     width: 194px
     height: 147px
@@ -890,28 +982,35 @@ footer
     align-items: center
     justify-content: center
     overflow: hidden
+
     img
       width: 100%
       height: 100%
       object-fit: cover
+
   &__body
     width: calc(100% - 194px)
     padding: 0 0 0 13px
+
   h3
     font-weight: bold
     font-size: 24px
+
   &__head
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
+
   .price
     margin: 0
+
   &__content
     padding: 4px 0 10px
 
     .box-text
       font-size: 12px
+
   &:last-child
     margin: 0
 
@@ -931,42 +1030,53 @@ footer
   .card-product__img
     width: 100%
     height: 219px
+
   .card-product__body
     width: 100%
     padding: 10px 0 0
+
   .card-product__sub-box
     margin: 10px 0 4px
 
 //user-page
 .user-page
   margin: 37px 0
+
   h1
     margin: 0 0 10px
     font-weight: 300
     font-size: 22px
     line-height: 26px
+
   h3
     margin: 0 0 10px
     font-size: 14px
     font-weight: normal
+
     span
       font-weight: 300
+
   .card-product
     .price
       font-size: 26px
+
       span
         font-size: 20px
+
     .list-rating
       li
         width: 17px
         height: 17px
         min-width: 17px
+
     .rating-val
       margin: 0 0 0 10px
       font-size: 20px
+
     h3
       font-size: 20px
       margin: 0
+
     .profile-info__links
       font-size: 18px
 
@@ -983,6 +1093,7 @@ footer
       font-size: 18px
       color: #000
       line-height: 21px
+
       &:hover
         color: $accent
 
@@ -990,14 +1101,17 @@ footer
   line-height: 16px
   font-size: 14px
   margin: 0 0 5px
+
   &__top
     width: 100%
     display: flex
     align-items: center
     justify-content: space-between
     flex-wrap: wrap
+
   .date
     font-size: 12px
+
   h4
     font-size: 16px
 
@@ -1009,12 +1123,15 @@ footer
   display: flex
   align-items: center
   margin: 0 0 11px
+
   &__img
     max-width: 51px
     display: flex
     align-items: center
+
     img
       width: 100%
+
   &__body
     width: calc(100% - 51px)
     padding: 0 0 0 4px
@@ -1022,15 +1139,19 @@ footer
     align-items: flex-start
     justify-content: space-between
     flex-wrap: wrap
+
   .price
     margin: 0
     font-size: 16px
+
     span
       font-size: 12px
+
   h3
     margin: 0
     font-size: 18px
     font-weight: bold
+
   .list-rating
     li
       width: 17px
@@ -1042,6 +1163,7 @@ footer
 .information
   width: 100%
   margin: 10px 0 0
+
   h3
     font-size: 18px
     font-weight: normal
@@ -1049,8 +1171,10 @@ footer
 
 .information-box
   font-size: 14px
+
   .btn
     margin: 8px 0 0
+
   .list-rating
     li
       min-width: 17px
@@ -1059,6 +1183,7 @@ footer
 
 .list-number
   counter-reset: item
+
   li
     display: flex
     align-items: center
@@ -1066,10 +1191,13 @@ footer
     p
       display: inline
       width: fit-content
+
     .list-rating
       margin: 0 0 0 8px
-  >li
+
+  > li
     margin: 0 0 2px
+
     &:before
       content: counters(item, ".") ": "
       counter-increment: item
@@ -1079,11 +1207,13 @@ footer
 .form-user
   label
     max-width: none
+
     input
       margin: 0
       max-width: none
       font-size: 14px
       font-weight: 300
+
   h3
     margin: 0 0 14px
     font-size: 18px
@@ -1091,11 +1221,239 @@ footer
 .delete-user
 
   margin: 28px 0 0
+
   h3
     font-size: 18px
     margin: 0 0 14px
+
   .btn
     margin: 0 0 0 auto
+
+//home
+.home
+  margin: 29px 0
+
+.home-slider__item
+  width: 100%
+
+  img
+    width: 100%
+
+.slick-arrow
+  position: absolute
+  z-index: 1
+  top: 50%
+  transform: translate(0,-50%)
+  width: 30px
+  height: 30px
+  background: #fff
+  box-shadow: 0 0 10px rgba(0,0,0,.4)
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 8px
+  svg
+    fill: $accent
+
+.slick-next
+  right: 10px
+
+.slick-prev
+  left: 10px
+
+.slick-dots
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  bottom: 0
+  margin: 20px auto 0
+  li
+    width: 14px
+    height: 14px
+    border: 2px solid $accent
+      radius: 50%
+    cursor: pointer
+    transition: .3s ease-in-out
+    margin: 0 6px 0 0
+    &:last-child
+      margin: 0
+    button
+      display: none
+  .slick-active
+    background: $accent
+
+//products
+.products
+  margin: 50px 0
+
+.product-card
+  width: calc(100% - 15px)
+  margin: 0 auto 10px
+  position: relative
+  &__img
+    width: 100%
+    height: 200px
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+  &__body
+    width: 100%
+    padding: 15px 0 0
+  &__title
+    color: #000
+    font-size: 15px
+    font-weight: 500
+    margin: 10px 0
+  .list-rating
+    margin: 0
+    li
+      width: 17px
+      height: 17px
+      min-width: 17px
+
+.price-wrapper
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 18px
+
+.new-price
+  font-size: 20px
+  color: red
+  font-weight: bold
+
+.old-price
+  color: #444
+  text-decoration: line-through
+  margin: 0 0 0 10px
+  font-weight: 500
+
+.price-default
+  font-size: 20px
+  font-weight: bold
+
+.btn-add-favorite
+  fill: none
+  width: 20px
+  height: 20px
+  position: absolute
+  right: 10px
+  top: 10px
+  z-index: 1
+  &:hover, &:focus
+    fill: $accent
+
+
+
+.publication-slider
+  .publication-box
+    width: calc(100% - 15px)
+    margin: 0 auto
+
+.providers
+  margin: 50px 0
+  h2
+    font-weight: normal
+    margin: 0 0 10px
+
+.providers-box
+  text-align: center
+  max-width: 120px
+  width: 100%
+  font-size: 12px
+  margin: 0 auto
+  font-weight: 700
+  h3
+    line-height: 2
+  &__img
+    width: 120px
+    height: 120px
+    border-radius: 50%
+    overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
+    margin: 0 auto 11px
+    img
+      width: 100%
+      height: 100%
+      object-fit: cover
+
+//prices-section
+.prices-section
+  margin: 27px 0 50px
+  h2
+    font-weight: normal
+    margin: 0 0 47px
+
+.table-wrapper
+  width: 100%
+  overflow-x: auto
+
+.table
+  font-size: 18px
+  width: 100%
+  border: 1px solid #dee2e6
+  td
+    padding: 0
+    border: 1px solid #dee2e6
+    &:not(:first-child)
+      width: 23%
+  tbody
+    td
+      padding: 10px
+      &:not(:first-child)
+        text-align: center
+  .btn
+    margin: 0 auto
+
+.check-item
+  fill: none
+  width: 24px
+  height: 24px
+  min-width: 24px
+  stroke: #00FF00
+  display: flex
+  align-items: center
+  justify-content: center
+  margin: 0 auto
+
+.name-tariffs
+  text-align: center
+  font-weight: 700
+  text-transform: uppercase
+  padding: 10px
+  width: 100%
+  background: #ccc
+  font-size: 15px
+
+.price-tariffs
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  margin: 10px auto 30px
+  text-align: center
+  font-size: 30px
+  font-weight: 700
+  .currency
+    font-weight: normal
+    font-size: 20px
+    margin: 3px 5px 0 0
+
+.footer-tariffs
+  width: 100%
+  background: #ccc
+  padding: 10px
+  min-height: 50px
+  text-align: center
 
 
 @import "media"

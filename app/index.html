@@ -22,7 +22,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css" integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css"
+        integrity="sha512-H9jrZiiopUdsLpg94A333EfumgUBpO9MdbxStdeITo+KEIMaNfHNvwyjjDJb+ERPaRS6DpyRlKbvPUasNItRyw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="css/libs.min.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -38,20 +41,19 @@
         <svg class="svg-icon">
           <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
-        <span class="btn-catalog__text">Katalog |</span>
+        <span class="btn-catalog__text">Katalog</span>
       </a>
     </li>
-    <li><a href="#">Handwerker & | <br>
+    <li><a href="#">Handwerker &<br>
       Meister</a></li>
-    <li><a href="#">Kunstler & | <br>
+    <li><a href="#">Kunstler &<br>
       Sammlerstücke</a></li>
-    <li><a href="#">Dienstleister & | <br>
+    <li><a href="#">Dienstleister &<br>
       Freiberufler</a></li>
     <li><a href="#">Meisterklasse & <br>
       Kreativbedarf</a></li>
   </ul>
 </div>
-
 
 <div class="wrapper">
   <div class="content">
@@ -107,14 +109,14 @@
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#burger"></use>
                     </svg>
-                    <span class="btn-catalog__text">Katalog |</span>
+                    <span class="btn-catalog__text">Katalog</span>
                   </a>
                 </li>
-                <li><a href="#">Handwerker & | <br>
+                <li><a href="#">Handwerker &<br>
                   Meister</a></li>
-                <li><a href="#">Kunstler & | <br>
+                <li><a href="#">Kunstler &<br>
                   Sammlerstücke</a></li>
-                <li><a href="#">Dienstleister & | <br>
+                <li><a href="#">Dienstleister &<br>
                   Freiberufler</a></li>
                 <li><a href="#">Meisterklasse & <br>
                   Kreativbedarf</a></li>
@@ -125,73 +127,384 @@
       </div>
     </header>
 
-    <section class="contacts">
+    <main class="home">
+      <div class="container-fluid p-0">
+        <div class="row">
+          <div class="col-12">
+            <div class="home-slider w-100">
+              <div class="slide">
+                <div class="home-slider__item"><img src="img/banner1.jpg" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="home-slider__item"><img src="img/banner1.jpg" alt=""></div>
+              </div>
+              <div class="slide">
+                <div class="home-slider__item"><img src="img/banner1.jpg" alt=""></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <div class="products">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
-            <h3>Kontaktformular</h3>
-            <form method="post" class="form-contacts">
-              <label>
-                <span class="input-title">Name <sup>*</sup></span>
-                <input type="text" name="name" required>
-              </label>
-              <label>
-                <span class="input-title">Vorname <sup>*</sup></span>
-                <input type="text" name="vorname" required>
-              </label>
-              <label>
-                <span class="input-title">E-Mail <sup>*</sup></span>
-                <input type="text" name="mail" required>
-              </label>
-              <label>
-                <span class="input-title">Kundennummer <sup>*</sup></span>
-                <input type="text" name="name">
-              </label>
-              <label>
-                <span class="input-title">Ihre Nachricht <sup>*</sup></span>
-                <textarea name="message" required></textarea>
-              </label>
-              <div class="captcha"><img src="img/captcha.png" alt=""></div>
-              <div class="necessarily">* Pflichtfelder</div>
-              <button type="submit" class="btn btn-accent">Senden</button>
-            </form>
+          <div class="col-12">
+            <div class="products-slider w-100">
+              <div class="slide">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="product-card__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="product-card__body">
+                    <ul class="list-rating">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-card__title">Lorem ipsum dolor</a>
+                    <div class="price-wrapper">
+                      <div class="new-price">€ 99,95</div>
+                      <div class="old-price">€ 108,95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="product-card__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="product-card__body">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-card__title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
+                    <div class="price-wrapper">
+                      <div class="price-default">€ 103,95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="product-card__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="product-card__body">
+                    <ul class="list-rating">
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li class="star0">
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-card__title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
+                    <div class="price-wrapper">
+                      <div class="new-price">€ 103,95</div>
+                      <div class="old-price">€ 143,95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="product-card__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="product-card__body">
+                    <ul class="list-rating">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-card__title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
+                    <div class="price-wrapper">
+                      <div class="new-price">€ 99,95</div>
+                      <div class="old-price">€ 108,95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="product-card">
+                  <a href="#" class="btn-add-favorite">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#heart"></use>
+                    </svg>
+                  </a>
+                  <a href="#" class="product-card__img"><img src="img/public1.jpeg" alt=""></a>
+                  <div class="product-card__body">
+                    <ul class="list-rating">
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                      <li>
+                        <svg class="svg-icon">
+                          <use xlink:href="img/sprite.svg#star"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                    <a href="#" class="product-card__title">Lorem ipsum dolor sit amet, consetetur sadipscing elitr</a>
+                    <div class="price-wrapper">
+                      <div class="new-price">€ 99,95</div>
+                      <div class="old-price">€ 108,95</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="col-12 col-md-6">
+        </div>
+      </div>
+    </div>
 
-            <div class="contacts-content">
-              <div class="box-text">
-                <p>Scheuen Sie keinen Kontakt, denn wir sind für Sie da! Sie können uns über die untenstehenden Kanäle
-                  stets erreichen. Sollten Sie Fragen zu Produkten oder Leistungen haben hilft Ihnen der fairmaster.de
-                  Support gerne weiter. </p>
-              </div>
+    <section class="publication">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Beste Publikationen</h2>
+          </div>
+        </div>
 
-              <div class="contacts-content__box">
-
-                <h3>Sie erreichen uns unter den Rufnummern:</h3>
-
-                <div class="contacts-info">
-                  <p>Telefon: +49 (0) 2932 - 49 57 478</p>
-                  <p>Telefax: +49 (0) 2932 - 49 49 726</p>
-
-                  <div class="schedule">Mo-Fr.: 08:00 Uhr - 16:30 Uhr</div>
+        <div class="row">
+          <div class="col-12">
+            <div class="publication-slider w-100">
+              <div class="slide">
+                <div class="publication-box">
+                  <a href="img/public1.jpeg" data-fancybox="image" class="publication-box__max"><img
+                      src="img/public1.jpeg"
+                      alt=""></a>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public2.jpeg"><img src="img/public2.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public3.jpeg"><img src="img/public3.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public4.jpeg"><img src="img/public4.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="contacts-content__box">
-                <h3>Anschrift</h3>
-                <div class="contacts-info">
-                  <p>Fairmaster GmbH <br>
-                    Haverkamp 1 <br>
-                    59759 Arnsberg</p>
+              <div class="slide">
+                <div class="publication-box">
+                  <a href="img/public5.jpeg" data-fancybox="image2" class="publication-box__max"><img
+                      src="img/public5.jpeg"
+                      alt=""></a>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public6.jpeg"><img src="img/public6.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public7.jpeg"><img src="img/public7.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public8.jpeg"><img src="img/public8.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-
-              <div class="contacts-content__box">
-                <h3>Hinweis</h3>
-                <div class="box-text">
-                  <p>Dieses Kontaktformular dient der reinen Produktinformation. Wir können keinen technischen oder
-                    buchhalterischen Support über dieses Formular abwickeln. Für technische Anfragen wenden Sie sich
-                    bitte an INFO@FAIRMASTER.DE.</p>
+              <div class="slide">
+                <div class="publication-box">
+                  <a href="img/public9.jpeg" data-fancybox="image3" class="publication-box__max"><img
+                      src="img/public9.jpeg"
+                      alt=""></a>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public10.jpeg"><img src="img/public10.jpeg"
+                                                                                               alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public11.jpeg"><img src="img/public11.jpeg"
+                                                                                               alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="publication-box">
+                  <a href="img/public13.jpeg" data-fancybox="image4" class="publication-box__max"><img
+                      src="img/public12.jpeg"
+                      alt=""></a>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public13.jpeg"><img src="img/public13.jpeg"
+                                                                                               alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public15.jpeg"><img src="img/public15.jpeg"
+                                                                                               alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public14.jpeg"><img src="img/public14.jpeg"
+                                                                                               alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="publication-box">
+                  <a href="img/public1.jpeg" data-fancybox="image" class="publication-box__max"><img
+                      src="img/public1.jpeg"
+                      alt=""></a>
+                  <div class="row">
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public2.jpeg"><img src="img/public2.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public3.jpeg"><img src="img/public3.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                    <div class="col-4">
+                      <div class="publication-box__min" data-img-path="img/public4.jpeg"><img src="img/public4.jpeg"
+                                                                                              alt="">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -199,6 +512,54 @@
         </div>
       </div>
     </section>
+
+    <section class="providers">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Neuste Anbieter</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="providers-slider w-100">
+              <div class="slide">
+                <div class="providers-box">
+                  <div class="providers-box__img"><img src="img/provider1.jpg" alt=""></div>
+                  <h3>Autoservice In Arnsberg</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="providers-box">
+                  <div class="providers-box__img"><img src="img/provider2.jpg" alt=""></div>
+                  <h3>Winterdienst In Münster
+                  </h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="providers-box">
+                  <div class="providers-box__img"><img src="img/provider3.jpg" alt=""></div>
+                  <h3>Kochkurs In München</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="providers-box">
+                  <div class="providers-box__img"><img src="img/provider4.jpg" alt=""></div>
+                  <h3>Karate Kurs In Berlin</h3>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="providers-box">
+                  <div class="providers-box__img"><img src="img/provider1.jpg" alt=""></div>
+                  <h3>Autoservice In Arnsberg</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </div>
 
 
@@ -264,7 +625,10 @@
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns"
         crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"
+        integrity="sha512-uURl+ZXMBrF4AwGaWmEetzrd+J5/8NRkWAvJx5sbPSSuOb0bZLqf+tOzniObO00BjHa/dD7gub9oCGMLPQHtQA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="js/common.js"></script>
 
 </body>
