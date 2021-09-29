@@ -114,3 +114,14 @@ $('.providers-slider').slick({
 
     ]
 });
+
+$('.links-favorite').on('click', function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+
+    if ($('.links-favorite').hasClass('active')) {
+        $(this).find('span').text('Entfernen |');
+    } else {
+        $(this).find('span').text('Marken |');
+    }
+});
