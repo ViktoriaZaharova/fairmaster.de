@@ -646,7 +646,8 @@ footer {
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
             order: 1;
-    background: #ccc; }
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); }
   .mobile-menu .submenu {
     padding: 10px;
     width: 100%; }
