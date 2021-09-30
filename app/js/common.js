@@ -115,6 +115,31 @@ $('.providers-slider').slick({
     ]
 });
 
+$('.gallery-publication').slick({
+    slidesToShow: 1,
+    fade: true,
+    // asNavFor: '.publication-box__wrap',
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+});
+
+$('.publication-box__wrap').slick({
+    slidesToShow: 3,
+    arrows: false,
+    vertical: true,
+    focusOnSelect: true,
+    asNavFor: '.gallery-publication',
+    responsive: [
+        {
+            breakpoint: 576,
+            settings: {
+                vertical: false,
+            }
+        }
+
+    ]
+});
+
 $('.links-favorite').on('click', function (e) {
     e.preventDefault();
     $(this).toggleClass('active');

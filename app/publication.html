@@ -52,7 +52,7 @@
         <svg class="svg-icon">
           <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
-        <span class="btn-catalog__text">Katalog</span>
+        <span class="btn-catalog__text">Katalog A-Z</span>
       </a>
       <div class="collapse" id="collapseExample">
         <ul class="submenu">
@@ -235,7 +235,7 @@
                     <svg class="svg-icon">
                       <use xlink:href="img/sprite.svg#burger"></use>
                     </svg>
-                    <span class="btn-catalog__text">Katalog</span>
+                    <span class="btn-catalog__text">Katalog A-Z</span>
                   </a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
@@ -675,18 +675,45 @@
     <section class="publication-page">
       <div class="container">
         <div class="row">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 col-lg-8">
             <div class="publication-box">
-              <a href="img/public1.jpeg" data-fancybox="image" class="publication-box__max"><img
-                  src="img/public1.jpeg" alt=""/></a>
+              <div class="gallery-publication">
+                <div class="slide">
+                  <div class="gallery-publication__item">
+                    <img src="img/public1.jpeg" alt=""/>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="gallery-publication__item">
+                    <img src="img/public2.jpeg" alt=""/>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="gallery-publication__item">
+                    <img src="img/public3.jpeg" alt=""/>
+                  </div>
+                </div>
+                <div class="slide">
+                  <div class="gallery-publication__item">
+                    <img src="img/public4.jpeg" alt=""/>
+                  </div>
+                </div>
+              </div>
+
               <div class="publication-box__wrap">
-                <div class="publication-box__min" data-img-path="img/public2.jpeg"><img src="img/public2.jpeg" alt="">
+                <div class="slide">
+                  <div class="publication-box__preview"><img src="img/public2.jpeg" alt="">
+                  </div>
                 </div>
 
-                <div class="publication-box__min" data-img-path="img/public3.jpeg"><img src="img/public3.jpeg" alt="">
+                <div class="slide">
+                  <div class="publication-box__preview"><img src="img/public3.jpeg" alt="">
+                  </div>
                 </div>
 
-                <div class="publication-box__min" data-img-path="img/public4.jpeg"><img src="img/public4.jpeg" alt="">
+                <div class="slide">
+                  <div class="publication-box__preview"><img src="img/public4.jpeg" alt="">
+                  </div>
                 </div>
               </div>
             </div>
@@ -719,7 +746,7 @@
               </div>
             </div>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-md-6 col-lg-4">
             <div class="publication-content">
               <h1>Fliesen legen</h1>
               <ul class="list-rating">
@@ -757,7 +784,7 @@
                   </svg>
                   <span>Merken |</span>
                 </a>
-                <a href="#" class="profile-info__links">
+                <a href="#" class="profile-info__links" data-toggle="modal" data-target="#contactModal">
                   <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#mail"></use>
                   </svg>
@@ -865,10 +892,10 @@
           <div class="col-12">
             <div class="publication-slider w-100">
               <div class="slide">
-                <div class="publication-box">
-                  <a href="img/public1.jpeg" data-fancybox="image" class="publication-box__max"><img
+                <a href="publication.html" class="publication-box">
+                  <span class="publication-box__max"><img
                       src="img/public1.jpeg"
-                      alt=""></a>
+                      alt=""></span>
                   <div class="row">
                     <div class="col-4">
                       <div class="publication-box__min" data-img-path="img/public2.jpeg"><img src="img/public2.jpeg"
@@ -886,13 +913,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="slide">
-                <div class="publication-box">
-                  <a href="img/public5.jpeg" data-fancybox="image2" class="publication-box__max"><img
+                <a href="publication.html" class="publication-box">
+                  <span class="publication-box__max"><img
                       src="img/public5.jpeg"
-                      alt=""></a>
+                      alt=""></span>
                   <div class="row">
                     <div class="col-4">
                       <div class="publication-box__min" data-img-path="img/public6.jpeg"><img src="img/public6.jpeg"
@@ -910,13 +937,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="slide">
-                <div class="publication-box">
-                  <a href="img/public9.jpeg" data-fancybox="image3" class="publication-box__max"><img
+                <a href="publication.html" class="publication-box">
+                  <span class="publication-box__max"><img
                       src="img/public9.jpeg"
-                      alt=""></a>
+                      alt=""></span>
                   <div class="row">
                     <div class="col-4">
                       <div class="publication-box__min" data-img-path="img/public10.jpeg"><img src="img/public10.jpeg"
@@ -933,13 +960,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="slide">
-                <div class="publication-box">
-                  <a href="img/public13.jpeg" data-fancybox="image4" class="publication-box__max"><img
+                <a href="publication.html" class="publication-box">
+                  <span class="publication-box__max"><img
                       src="img/public12.jpeg"
-                      alt=""></a>
+                      alt=""></span>
                   <div class="row">
                     <div class="col-4">
                       <div class="publication-box__min" data-img-path="img/public13.jpeg"><img src="img/public13.jpeg"
@@ -957,13 +984,13 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
               <div class="slide">
-                <div class="publication-box">
-                  <a href="img/public1.jpeg" data-fancybox="image" class="publication-box__max"><img
+                <a href="publication.html" class="publication-box">
+                  <span class="publication-box__max"><img
                       src="img/public1.jpeg"
-                      alt=""></a>
+                      alt=""></span>
                   <div class="row">
                     <div class="col-4">
                       <div class="publication-box__min" data-img-path="img/public2.jpeg"><img src="img/public2.jpeg"
@@ -981,7 +1008,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -1224,13 +1251,22 @@
           <div class="col-12 d-flex align-items-center flex-wrap">
             <a href="index.html" class="logo">fairmaster.de</a>
 
-            <ul class="list-payment">
-              <li><a href="#"><img src="img/pay1.png" alt=""></a></li>
-              <li><a href="#"><img src="img/pay2.png" alt=""></a></li>
-              <li><a href="#"><img src="img/pay3.png" alt=""></a></li>
-              <li><a href="#"><img src="img/pay4.png" alt=""></a></li>
-              <li><a href="#"><img src="img/pay5.png" alt=""></a></li>
-              <li><a href="#"><img src="img/pay6.png" alt=""></a></li>
+            <ul class="list-social">
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#instagram"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#twitter"></use>
+                </svg>
+              </a></li>
+              <li><a href="#">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#fb"></use>
+                </svg>
+              </a></li>
             </ul>
           </div>
         </div>
@@ -1246,6 +1282,53 @@
       </div>
     </div>
   </footer>
+</div>
+
+<!-- Модальное окно -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+        </button>
+        <form method="post" class="form form-modal">
+         <div class="row">
+           <div class="col-12">
+             <label>
+               <span class="input-title">Nachricht an {придлогатель} betreffend {публикация} senden</span>
+               <textarea name="message" placeholder="Ihre Nachright"></textarea>
+             </label>
+           </div>
+           <div class="col-12">
+             <label>
+               <span class="input-title">Ihre Kontaktdaten</span>
+               <input type="text" name="name" required placeholder="Name*">
+             </label>
+           </div>
+           <div class="col-12 col-sm-6">
+             <label>
+               <span class="input-title">E-Mail-Addresse*</span>
+               <input type="text" name="mail" required placeholder="E-Mail-Addresse*">
+             </label>
+           </div>
+           <div class="col-12 col-sm-6">
+             <label>
+               <span class="input-title">Telefon</span>
+               <input type="text" name="phone" placeholder="Telefon">
+             </label>
+           </div>
+
+           <div class="col-12">
+             <button type="submit" class="btn btn-accent">Nachricht absenden</button>
+
+             <div class="consent">Es gilt ansere <a href="#" class="color-accent">Datenschutzerklarung</a></div>
+           </div>
+         </div>
+        </form>
+      </div>
+
+    </div>
+  </div>
 </div>
 
 <script src="js/jquery.min.js"></script>
