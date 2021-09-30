@@ -125,3 +125,18 @@ $('.links-favorite').on('click', function (e) {
         $(this).find('span').text('Marken |');
     }
 });
+
+
+// показать карточку товара по наведению в зависимости от значениея data-tab
+$(document).ready(function () {
+    $(".mega-menu__route").hover(function () {
+        var id = $(this).attr('data-tab'),
+            content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+        $('.mega-menu__route.active').removeClass('active'); // 1
+        $(this).addClass('active'); // 2
+
+        $('.js-tab-content.active').removeClass('active'); // 3
+        content.addClass('active'); // 4
+    })
+});

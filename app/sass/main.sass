@@ -284,7 +284,7 @@ strong
 .menu
   width: 100%
   display: flex
-  align-items: flex-start
+  align-items: stretch
   justify-content: space-between
   font-size: 24px
 
@@ -330,6 +330,63 @@ strong
   height: 24px
   margin: 0 0 0 10px
   stroke: $accent
+
+.dropdown-item-menu
+  &:hover
+    .dropdown-menu
+      display: block
+
+.dropdown-menu
+  margin: 0
+  border: none
+    radius: 0
+  padding: 30px
+  display: none
+  box-shadow: 0 10px 10px rgba(#000, .3)
+
+.dropdown-menu-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.dropdown-menu-col
+  padding: 0 10px
+  flex: 1
+  h3
+    margin: 0 0 30px
+    font-size: 24px
+  h4
+    color: $accent
+    font-size: 20px
+    margin: 0 0 20px
+
+.dropdown-menu-img
+  width: 100%
+  height: 180px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  img
+    width: 100%
+    height: 100%
+    object-fit: cover
+
+.submenu
+  font-size: 12px
+  padding: 0 0 0 10px
+  li
+    border-bottom: 1px solid #ccc
+    &:after
+      display: none
+    &:last-child
+      border: none
+    a
+      padding: 5px 0
+      color: #000
+      &:hover
+        color: $accent
 
 //footer
 footer
