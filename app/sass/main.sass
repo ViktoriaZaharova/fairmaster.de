@@ -332,7 +332,9 @@ strong
   stroke: $accent
 
 .dropdown-item-menu
+  width: 25%
   &:hover
+    text-shadow: 0 0 5px rgba(#000,.2)
     .dropdown-menu
       display: block
 
@@ -343,23 +345,18 @@ strong
   padding: 30px
   display: none
   box-shadow: 0 10px 10px rgba(#000, .3)
+  width: 100%
 
 .dropdown-menu-wrapper
   width: 100%
   display: flex
   align-items: flex-start
-  justify-content: space-between
+  justify-content: flex-start
 
 .dropdown-menu-col
   padding: 0 10px
-  flex: 1
-  h3
-    margin: 0 0 30px
-    font-size: 24px
-  h4
-    color: $accent
-    font-size: 20px
-    margin: 0 0 20px
+  width: 20%
+  
 
 .dropdown-menu-img
   width: 100%
@@ -375,7 +372,6 @@ strong
 
 .submenu
   font-size: 12px
-  padding: 0 0 0 10px
   li
     border-bottom: 1px solid #ccc
     &:after
@@ -564,7 +560,7 @@ footer
   width: 100%
   padding: 30px
   box-shadow: 0 0 10px rgba(0, 0, 0, .5)
-
+  overflow-y: auto
   .menu
     flex-wrap: wrap
     flex-direction: column
@@ -572,7 +568,23 @@ footer
     font-size: 18px
 
     li
+      flex-wrap: wrap
+      width: 100%
       margin: 0 0 10px
+      &:after
+        display: none
+      a
+        width: 100%
+
+  .collapse
+    width: 100%
+    order: 1
+    background: #ccc
+  .submenu
+    padding: 10px
+    width: 100%
+    li
+      width: 100%
 
 .btn-close
   width: 20px
@@ -753,6 +765,20 @@ footer
   h2
     font-weight: 400
     margin: 0 0 9px
+
+.publication-information
+  margin: 0 0 24px
+  h3
+    margin: 0 0 10px
+    font-size: 24px
+
+.publication-information-box
+  font-size: 14px
+  margin: 0 0 33px
+
+.list-dots
+  list-style: disc
+  padding: 0 0 0 20px
 
 .publication-col
   display: none

@@ -46,25 +46,135 @@
 <div class="mobile-menu">
   <div class="btn-close"></div>
   <ul class="menu">
-    <li>
-      <a href="#" class="btn-catalog">
+    <li class="dropdown">
+      <a class="btn-catalog" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
         <svg class="svg-icon">
           <use xlink:href="img/sprite.svg#burger"></use>
         </svg>
         <span class="btn-catalog__text">Katalog</span>
       </a>
+      <div class="collapse" id="collapseExample">
+        <ul class="submenu">
+          <li><a href="#">Möbelaufbau
+          </a></li>
+          <li><a href="#">Modernisierung, Sanierung
+          </a></li>
+          <li><a href="#">Rollläden, Markisen
+          </a></li>
+          <li><a href="#">Schlosser, Metallbau
+          </a></li>
+          <li><a href="#">Maurer
+          </a></li>
+          <li><a href="#">Stuckateur
+          </a></li>
+          <li><a href="#">Tapezierer
+          </a></li>
+          <li><a href="#">Tischler, Schreiner
+          </a></li>
+          <li><a href="#">Treppenbau
+          </a></li>
+          <li><a href="#">Trockenbau
+          </a></li>
+          <li><a href="#">Türen
+          </a></li>
+          <li><a href="#">Küchenbau
+          </a></li>
+          <li><a href="#">Verfugen, Fugarbeiten, Klinkerfugen
+          </a></li>
+          <li><a href="#">Wintergartenbau
+          </a></li>
+          <li><a href="#">Zimmerer
+          </a></li>
+          <li><a href="#">Sonstige Handwerksleistung
+          </a></li>
+          <li><a href="#">Motorradreparatur
+          </a></li>
+          <li><a href="#">Schneiderei</a></li>
+        </ul>
+      </div>
     </li>
-    <li><a href="#">Handwerker &<br>
-      Meister</a></li>
-    <li><a href="#">Kunstler &<br>
-      Sammlerstücke</a></li>
-    <li><a href="#">Dienstleister &<br>
-      Freiberufler</a></li>
-    <li><a href="#">Meisterklasse & <br>
-      Kreativbedarf</a></li>
+    <li><a data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">Handwerker &<br>
+      Meister</a>
+      <div class="collapse" id="collapseExample2">
+        <ul class="submenu">
+          <li><a href="#">Badsanierung</a></li>
+          <li><a href="#">Bodenleger
+          </a></li>
+          <li><a href="#">Deckenarbeiten
+          </a></li>
+          <li><a href="#">Entrümpelung
+          </a></li>
+          <li><a href="#">Elektriker
+          </a></li>
+          <li><a href="#">Fenstermontage
+          </a></li>
+          <li><a href="#">Fliesenleger
+          </a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a data-toggle="collapse" href="#collapseExample3" role="button" aria-expanded="false" aria-controls="collapseExample3">Kunstler &<br>
+      Sammlerstücke</a>
+      <div class="collapse" id="collapseExample3">
+        <ul class="submenu">
+          <li><a href="#">Badsanierung</a></li>
+          <li><a href="#">Bodenleger
+          </a></li>
+          <li><a href="#">Deckenarbeiten
+          </a></li>
+          <li><a href="#">Entrümpelung
+          </a></li>
+          <li><a href="#">Elektriker
+          </a></li>
+          <li><a href="#">Fenstermontage
+          </a></li>
+          <li><a href="#">Fliesenleger
+          </a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a data-toggle="collapse" href="#collapseExample4" role="button" aria-expanded="false" aria-controls="collapseExample4">Dienstleister &<br>
+      Freiberufler</a>
+      <div class="collapse" id="collapseExample4">
+        <ul class="submenu">
+          <li><a href="#">Badsanierung</a></li>
+          <li><a href="#">Bodenleger
+          </a></li>
+          <li><a href="#">Deckenarbeiten
+          </a></li>
+          <li><a href="#">Entrümpelung
+          </a></li>
+          <li><a href="#">Elektriker
+          </a></li>
+          <li><a href="#">Fenstermontage
+          </a></li>
+          <li><a href="#">Fliesenleger
+          </a></li>
+        </ul>
+      </div>
+    </li>
+    <li><a data-toggle="collapse" href="#collapseExample5" role="button" aria-expanded="false" aria-controls="collapseExample5">Meisterklasse & <br>
+      Kreativbedarf</a>
+      <div class="collapse" id="collapseExample5">
+        <ul class="submenu">
+          <li><a href="#">Badsanierung</a></li>
+          <li><a href="#">Bodenleger
+          </a></li>
+          <li><a href="#">Deckenarbeiten
+          </a></li>
+          <li><a href="#">Entrümpelung
+          </a></li>
+          <li><a href="#">Elektriker
+          </a></li>
+          <li><a href="#">Fenstermontage
+          </a></li>
+          <li><a href="#">Fliesenleger
+          </a></li>
+        </ul>
+      </div>
+    </li>
   </ul>
 </div>
-
 
 <div class="wrapper">
   <div class="content">
@@ -125,12 +235,9 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <h3>Katalog</h3>
                         <div class="dropdown-menu-img"><img src="img/public7.jpeg" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
-                        <h4>Handwerker &
-                          Meister</h4>
                         <ul class="submenu">
                           <li><a href="#">Möbelaufbau
                           </a></li>
@@ -170,8 +277,6 @@
                         </ul>
                       </div>
                       <div class="dropdown-menu-col">
-                        <h4>Kunstler &
-                          Sammlerstücke</h4>
                         <ul class="submenu">
 
                           <li><a href="#">Möbelaufbau
@@ -212,8 +317,6 @@
                         </ul>
                       </div>
                       <div class="dropdown-menu-col">
-                        <h4>Dienstleister & |
-                          Freiberufler</h4>
                         <ul class="submenu">
 
                           <li><a href="#">Möbelaufbau
@@ -254,8 +357,6 @@
                         </ul>
                       </div>
                       <div class="dropdown-menu-col">
-                        <h4>Meisterklasse &
-                          Kreativbedarf</h4>
                         <ul class="submenu">
                           <li><a href="#">Möbelaufbau
                           </a></li>
@@ -565,6 +666,7 @@
 
 
     </header>
+
     <section class="search-page">
       <div class="container">
         <div class="row">
