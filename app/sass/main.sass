@@ -115,6 +115,7 @@ input, textarea, select
     outline: none
     box-shadow: none
 
+
 select
   cursor: pointer
   appearance: none
@@ -244,7 +245,7 @@ strong
   color: $accent
   font-size: 48px
   margin: 0 16px 0 0
-
+  line-height: .9
   &:hover
     color: #000
 
@@ -280,6 +281,7 @@ strong
 
 .header-bottom
   padding: 11px 0 0
+  border-bottom: 1px solid $accent
 
 .menu
   width: 100%
@@ -333,19 +335,33 @@ strong
 
 .dropdown-item-menu
   width: 25%
+  >a
+    height: 100%
+    align-items: flex-start
+    width: 100%
+    border: 1px solid transparent
+      bottom: none
   &:hover
+    box-shadow: 0 0 5px rgba(#000, .2)
     text-shadow: 0 0 5px rgba(#000,.2)
+    >a
+      border: 1px solid $accent
+        bottom: none
+      background: #ffff
+      z-index: 1001
+      position: relative
     .dropdown-menu
       display: block
 
 .dropdown-menu
-  margin: 0
+  margin: -1px 0 0
   border: none
     radius: 0
   padding: 30px 20px
   display: none
   box-shadow: 0 10px 10px rgba(#000, .3)
   width: 100%
+  border-top: 1px solid $accent
 
 .dropdown-menu-wrapper
   width: 100%
@@ -403,6 +419,9 @@ strong
 //footer
 footer
   flex: 0 0 auto
+  .list-social
+    min-height: 37px
+    align-items: flex-end
 
 .footer-bottom
   padding: 8px 0
