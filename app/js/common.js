@@ -31,6 +31,7 @@ $('.btn-publication').on('click', function (e) {
 $('.home-slider').slick({
     slidesToShow: 1,
     fade: true,
+    autoplay: true,
     autoplaySpeed: 2000,
     dots: true,
     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',

@@ -79,7 +79,7 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
-input, textarea, select {
+input, textarea, select, .form-control {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
@@ -97,15 +97,15 @@ input, textarea, select {
   padding: 0 10px;
   color: #000;
   font-size: 18px; }
-  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder {
+  input::-webkit-input-placeholder, textarea::-webkit-input-placeholder, select::-webkit-input-placeholder, .form-control::-webkit-input-placeholder {
     color: #000; }
-  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder {
+  input::-moz-placeholder, textarea::-moz-placeholder, select::-moz-placeholder, .form-control::-moz-placeholder {
     color: #000; }
-  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder {
+  input::-ms-input-placeholder, textarea::-ms-input-placeholder, select::-ms-input-placeholder, .form-control::-ms-input-placeholder {
     color: #000; }
-  input::placeholder, textarea::placeholder, select::placeholder {
+  input::placeholder, textarea::placeholder, select::placeholder, .form-control::placeholder {
     color: #000; }
-  input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus {
+  input:hover, input:focus, textarea:hover, textarea:focus, select:hover, select:focus, .form-control:hover, .form-control:focus {
     outline: none;
     -webkit-box-shadow: none;
             box-shadow: none; }
@@ -129,7 +129,8 @@ label {
   border: none;
     border-radius: 0;
   font-family: "Roboto", sans-serif;
-  font-size: 16px; }
+  font-size: 16px;
+  background: transparent; }
   .btn:hover, .btn:focus, button:hover, button:focus {
     outline: none;
     -webkit-box-shadow: none;
@@ -264,11 +265,12 @@ strong {
   overflow: hidden; }
   .form-search button {
     position: absolute;
-    right: 0;
-    top: 0;
-    height: 100%;
+    right: -2px;
+    top: -2px;
+    height: calc(100% + 4px);
     background: #FF8800;
-    width: 92px; }
+    width: 92px;
+    z-index: 1; }
     .form-search button:hover {
       background: #db6e00; }
     .form-search button .svg-icon {
@@ -282,8 +284,7 @@ strong {
     border: none; }
 
 .header-bottom {
-  padding: 11px 0 0;
-  border-bottom: 1px solid #FF8800; }
+  padding: 11px 0 0; }
 
 .menu {
   width: 100%;
@@ -352,21 +353,13 @@ strong {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
-    width: 100%;
-    border: 1px solid transparent;
-      border-bottom: none; }
-  .dropdown-item-menu:hover {
-    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-    text-shadow: 0 0 5px rgba(0, 0, 0, 0.2); }
-    .dropdown-item-menu:hover > a {
-      border: 1px solid #FF8800;
-        border-bottom: none;
-      background: #ffff;
-      z-index: 1001;
-      position: relative; }
-    .dropdown-item-menu:hover .dropdown-menu {
-      display: block; }
+    width: 100%; }
+  .dropdown-item-menu:hover > a {
+    background: #ffff;
+    z-index: 1001;
+    position: relative; }
+  .dropdown-item-menu:hover .dropdown-menu {
+    display: block; }
 
 .dropdown-menu {
   margin: -1px 0 0;
@@ -376,8 +369,7 @@ strong {
   display: none;
   -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
           box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-  width: 100%;
-  border-top: 1px solid #FF8800; }
+  width: 100%; }
 
 .dropdown-menu-wrapper {
   width: 100%;

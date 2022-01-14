@@ -93,7 +93,7 @@ a
   &:hover, &:focus
     text-decoration: none
 
-input, textarea, select
+input, textarea, select, .form-control
   outline: none
   box-shadow: none
   appearance: none
@@ -133,7 +133,7 @@ label
     radius: 0
   font-family: $default-font
   font-size: 16px
-
+  background: transparent
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -259,12 +259,12 @@ strong
 
   button
     position: absolute
-    right: 0
-    top: 0
-    height: 100%
+    right: -2px
+    top: -2px
+    height: calc(100% + 4px)
     background: $accent
     width: 92px
-
+    z-index: 1
     &:hover
       background: #db6e00
 
@@ -281,7 +281,6 @@ strong
 
 .header-bottom
   padding: 11px 0 0
-  border-bottom: 1px solid $accent
 
 .menu
   width: 100%
@@ -339,14 +338,9 @@ strong
     height: 100%
     align-items: flex-start
     width: 100%
-    border: 1px solid transparent
-      bottom: none
+
   &:hover
-    box-shadow: 0 0 5px rgba(#000, .2)
-    text-shadow: 0 0 5px rgba(#000,.2)
     >a
-      border: 1px solid $accent
-        bottom: none
       background: #ffff
       z-index: 1001
       position: relative
@@ -361,7 +355,6 @@ strong
   display: none
   box-shadow: 0 10px 10px rgba(#000, .3)
   width: 100%
-  border-top: 1px solid $accent
 
 .dropdown-menu-wrapper
   width: 100%
