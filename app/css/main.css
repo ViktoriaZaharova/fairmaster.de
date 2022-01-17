@@ -648,6 +648,8 @@ footer {
 
 .contacts-content {
   padding: 10px; }
+  .contacts-content .box-text p {
+    margin: 0 0 10px; }
 
 .contacts-info {
   margin: 12px 0 0; }
@@ -656,6 +658,13 @@ footer {
   margin: 20px 0 0; }
   .contacts-content__box h3 {
     margin: 0; }
+  .contacts-content__box ul {
+    margin: 0 0 10px; }
+    .contacts-content__box ul li {
+      margin: 0 0 10px; }
+
+.impressum p {
+  margin: 0 0 10px; }
 
 .contacts-info {
   padding: 0 0 0 20px;
