@@ -188,7 +188,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 d-flex align-items-center flex-wrap">
-              <p>Benutzer: 123 | Anbieter: 312 | Ausstellungen: 455</p>
+              <p>Benutzer: 13 | Anbieter: 5 | Ausstellungen: 14</p>
               <div class="contact-item">Kontakt: info@fairmaster.de</div>
             </div>
           </div>
@@ -201,9 +201,9 @@
               <a href="index.html" class="logo">fairmaster.de</a>
               <form method="post" class="form-search">
                 <label>
-                  <input type="text" placeholder="Suche....." name="search">
+                  <input type="text" class="form-control" placeholder="Suche....." name="search">
                 </label>
-                <button type="submit" class="btn">
+                <button type="submit" class="btn btn-primary">
                   <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#search"></use>
                   </svg>
@@ -211,7 +211,7 @@
               </form>
 
               <div class="header-box">
-                <a href="user.html" class="header-box__links">Login</a>
+                <a href="user.html" class="header-box__links">Anmelden</a>
                 <a href="#" class="header-box__links">Registrieren</a>
               </div>
 
@@ -403,8 +403,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Handwerker &<br>
-                  Meister</a>
+                <li class="dropdown-item-menu"><a href="#">Handwerker & <br>Gewerbebetriebe</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -468,8 +467,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Kunstler &<br>
-                  Sammlerstücke</a>
+                <li class="dropdown-item-menu"><a href="#">Freiberufler & <br>Dienstleister</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -533,8 +531,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Dienstleister &<br>
-                  Freiberufler</a>
+                <li class="dropdown-item-menu"><a href="#">Künstler & <br>Designer</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -598,8 +595,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Meisterklasse & <br>
-                  Kreativbedarf</a>
+                <li class="dropdown-item-menu"><a href="#">Kreativbedarf & <br>Sammlerbörse</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -676,47 +672,100 @@
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 col-lg-8">
-            <div class="publication-box">
-              <div class="gallery-publication">
-                <div class="slide">
-                  <div class="gallery-publication__item">
-                    <img src="img/public1.jpeg" alt=""/>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="gallery-publication__item">
-                    <img src="img/public2.jpeg" alt=""/>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="gallery-publication__item">
-                    <img src="img/public3.jpeg" alt=""/>
-                  </div>
-                </div>
-                <div class="slide">
-                  <div class="gallery-publication__item">
-                    <img src="img/public4.jpeg" alt=""/>
-                  </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="nav nav-tabs nav-tabs-my" id="nav-tab" role="tablist">
+                  <a class="nav-link active" id="nav-gallery-tab" data-toggle="tab" href="#nav-gallery" role="tab"
+                     aria-controls="nav-gallery" aria-selected="true">Image gallery</a>
+                  <a class="nav-link" id="nav-video-tab" data-toggle="tab" href="#nav-video" role="tab"
+                     aria-controls="nav-video" aria-selected="false">Video gallery</a>
                 </div>
               </div>
+              <div class="col-12">
+                <div class="tab-content">
+                  <div class="tab-pane fade active show" id="nav-gallery" role="tabpanel"
+                       aria-labelledby="nav-gallery-tab">
+                    <div class="publication-box">
+                      <div class="gallery-publication">
+                        <div class="slide">
+                          <div class="gallery-publication__item">
+                            <img src="img/public1.jpeg" alt=""/>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="gallery-publication__item">
+                            <img src="img/public2.jpeg" alt=""/>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="gallery-publication__item">
+                            <img src="img/public3.jpeg" alt=""/>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="gallery-publication__item">
+                            <img src="img/public4.jpeg" alt=""/>
+                          </div>
+                        </div>
+                      </div>
 
-              <div class="publication-box__wrap">
-                <div class="slide">
-                  <div class="publication-box__preview"><img src="img/public2.jpeg" alt="">
+                      <div class="publication-box__wrap">
+                        <div class="slide">
+                          <div class="publication-box__preview"><img src="img/public2.jpeg" alt="">
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="publication-box__preview"><img src="img/public3.jpeg" alt="">
+                          </div>
+                        </div>
+
+                        <div class="slide">
+                          <div class="publication-box__preview"><img src="img/public4.jpeg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
+                  <div class="tab-pane fade" id="nav-video" role="tabpanel" aria-labelledby="nav-video-tab">
+                    <div class="videos-wrapper">
+                      <div class="video-slider">
+                        <div class="slide">
+                          <div class="video-slider-box">
+                            <iframe src="https://www.youtube.com/embed/62uLFAExx-k"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                          </div>
+                        </div>
+                        <div class="slide">
+                          <div class="video-slider-box">
+                            <iframe src="https://www.youtube.com/embed/LXb3EKWsInQ" title="YouTube video player"
+                                    frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen></iframe>
+                          </div>
+                        </div>
+                      </div>
 
-                <div class="slide">
-                  <div class="publication-box__preview"><img src="img/public3.jpeg" alt="">
-                  </div>
-                </div>
+                      <div class="video-slider-preview">
+                        <div class="slide">
+                          <div class="publication-box__preview"><img src="img/public2.jpeg" alt="">
+                          </div>
+                        </div>
 
-                <div class="slide">
-                  <div class="publication-box__preview"><img src="img/public4.jpeg" alt="">
+                        <div class="slide">
+                          <div class="publication-box__preview"><img src="img/public3.jpeg" alt="">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
             </div>
+
 
             <div class="profile-box__footer">
               <div class="share">
@@ -1292,38 +1341,38 @@
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
         </button>
         <form method="post" class="form form-modal">
-         <div class="row">
-           <div class="col-12">
-             <label>
-               <span class="input-title">Nachricht an {придлогатель} betreffend {публикация} senden</span>
-               <textarea name="message" placeholder="Ihre Nachright"></textarea>
-             </label>
-           </div>
-           <div class="col-12">
-             <label>
-               <span class="input-title">Ihre Kontaktdaten</span>
-               <input type="text" name="name" required placeholder="Name*">
-             </label>
-           </div>
-           <div class="col-12 col-sm-6">
-             <label>
-               <span class="input-title">E-Mail-Addresse*</span>
-               <input type="text" name="mail" required placeholder="E-Mail-Addresse*">
-             </label>
-           </div>
-           <div class="col-12 col-sm-6">
-             <label>
-               <span class="input-title">Telefon</span>
-               <input type="text" name="phone" placeholder="Telefon">
-             </label>
-           </div>
+          <div class="row">
+            <div class="col-12">
+              <label>
+                <span class="input-title">Nachricht an {придлогатель} betreffend {публикация} senden</span>
+                <textarea name="message" placeholder="Ihre Nachright"></textarea>
+              </label>
+            </div>
+            <div class="col-12">
+              <label>
+                <span class="input-title">Ihre Kontaktdaten</span>
+                <input type="text" name="name" required placeholder="Name*">
+              </label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label>
+                <span class="input-title">E-Mail-Addresse*</span>
+                <input type="text" name="mail" required placeholder="E-Mail-Addresse*">
+              </label>
+            </div>
+            <div class="col-12 col-sm-6">
+              <label>
+                <span class="input-title">Telefon</span>
+                <input type="text" name="phone" placeholder="Telefon">
+              </label>
+            </div>
 
-           <div class="col-12">
-             <button type="submit" class="btn btn-accent">Nachricht absenden</button>
+            <div class="col-12">
+              <button type="submit" class="btn btn-accent">Nachricht absenden</button>
 
-             <div class="consent">Es gilt ansere <a href="#" class="color-accent">Datenschutzerklarung</a></div>
-           </div>
-         </div>
+              <div class="consent">Es gilt ansere <a href="#" class="color-accent">Datenschutzerklarung</a></div>
+            </div>
+          </div>
         </form>
       </div>
 

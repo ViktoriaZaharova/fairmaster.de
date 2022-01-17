@@ -183,7 +183,7 @@
         <div class="container">
           <div class="row">
             <div class="col-12 d-flex align-items-center flex-wrap">
-              <p>Benutzer: 123 | Anbieter: 312 | Ausstellungen: 455</p>
+              <p>Benutzer: 13 | Anbieter: 5 | Ausstellungen: 14</p>
               <div class="contact-item">Kontakt: info@fairmaster.de</div>
             </div>
           </div>
@@ -196,9 +196,9 @@
               <a href="index.html" class="logo">fairmaster.de</a>
               <form method="post" class="form-search">
                 <label>
-                  <input type="text" placeholder="Suche....." name="search">
+                  <input type="text" class="form-control" placeholder="Suche....." name="search">
                 </label>
-                <button type="submit" class="btn">
+                <button type="submit" class="btn btn-primary">
                   <svg class="svg-icon">
                     <use xlink:href="img/sprite.svg#search"></use>
                   </svg>
@@ -206,7 +206,7 @@
               </form>
 
               <div class="header-box">
-                <a href="user.html" class="header-box__links">Login</a>
+                <a href="user.html" class="header-box__links">Anmelden</a>
                 <a href="#" class="header-box__links">Registrieren</a>
               </div>
 
@@ -398,8 +398,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Handwerker &<br>
-                  Meister</a>
+                <li class="dropdown-item-menu"><a href="#">Handwerker & <br>Gewerbebetriebe</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -463,8 +462,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Kunstler &<br>
-                  Sammlerstücke</a>
+                <li class="dropdown-item-menu"><a href="#">Freiberufler & <br>Dienstleister</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -528,8 +526,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Dienstleister &<br>
-                  Freiberufler</a>
+                <li class="dropdown-item-menu"><a href="#">Künstler & <br>Designer</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -593,8 +590,7 @@
                     </div>
                   </div>
                 </li>
-                <li class="dropdown-item-menu"><a href="#">Meisterklasse & <br>
-                  Kreativbedarf</a>
+                <li class="dropdown-item-menu"><a href="#">Kreativbedarf & <br>Sammlerbörse</a>
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
@@ -715,6 +711,15 @@
                     labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores
                     et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
                 </div>
+
+                <div class="links-modals">
+                  <a href="#" class="profile-info__links" data-toggle="modal" data-target="#termsModal">
+                    <span>AGB |</span>
+                  </a>
+                  <a href="#" class="profile-info__links" data-toggle="modal" data-target="#imprintModal">
+                    <span>Impressum</span>
+                  </a>
+                </div>
               </div>
 
               <div class="profile-box__footer">
@@ -766,8 +771,9 @@
 
               <div class="profile-info__body">
                 <div class="contacts-info">
-                  <p>Email: example@exampel.com</p>
-                  <p>Telefon: +49 (0) 123 20 20 20 20</p>
+                  <p>Email: <a href="#" class="d-inline color-accent">example@exampel.com</a></p>
+                  <p>Telefon: <a href="#" class="d-inline color-accent">+49 (0) 123 20 20 20 20</a></p>
+                  <p>Website: <a href="#" class="d-inline color-accent">***</a></p>
                 </div>
                 <ul class="list-social">
                   <li><a href="#">
