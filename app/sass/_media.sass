@@ -130,6 +130,10 @@
   .publication-page .publication-box__max
     height: 260px
 
+  .form-profile
+    label
+      margin: 0 0 10px
+
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 670px)
   .form-search
@@ -226,6 +230,11 @@
   .nav-tabs-my .nav-link
     margin: 0 10px 0 0
 
+  .table-prices
+    min-width: auto
+    .tr
+      width: calc(50% - 15px)
+      margin: 0 0 30px
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width: 480px)
@@ -252,6 +261,19 @@
   .product-card, .publication-slider .publication-box
     width: 100%
 
+  .form-profile
+    .btn-group
+      .btn
+        max-width: none
+        width: 100%
+
+
+  .btn-group
+    .btn
+      width: 100%
+      margin: 0 0 10px
+      max-width: none
+
 @media only screen and (max-width: 420px)
   .input-title
     min-width: auto
@@ -266,6 +288,7 @@
 
   .logo
     font-size: 22px
+    margin: 0
 
   .header-box
     font-size: 12px
@@ -291,3 +314,10 @@
   .publication-box__preview
     height: 60px
 
+
+  footer .list-social
+    min-height: auto
+    margin: 0 0 0 10px
+
+  .table-prices .tr
+    width: 100%

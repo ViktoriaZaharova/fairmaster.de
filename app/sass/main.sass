@@ -174,6 +174,17 @@ label
     border-color: #FF8800
     background: #db6e00
 
+.btn-danger-my
+  background: #BB0000
+  color: #fff
+  border-color: #BB0000
+
+.btn-border
+  border: 1px solid #FF8800
+    radius: 5px
+  background: #fff
+  padding: 6px 10px
+
 .btn-red
   color: #fff
   background: #FF0000
@@ -184,6 +195,24 @@ label
   &:hover
     background: $accent
     color: #fff
+
+.btn-group
+  width: 100%
+  margin: 0 0 30px
+  flex-wrap: wrap
+  .btn
+    margin: 0 20px 0 0
+    &:last-child
+      margin: 0
+
+.btn-group>.btn-group:not(:last-child)>.btn, .btn-group>.btn:not(:last-child):not(.dropdown-toggle), .btn-group>.btn-group:not(:first-child)>.btn, .btn-group>.btn:not(:first-child)
+  border-radius: 5px
+
+.color-green
+  color: green
+
+.color-red
+  color: red
 
 .wrapper
   display: flex
@@ -595,7 +624,10 @@ footer
   p
     margin: 0 0 10px
 
-
+.login-wrapper
+  margin: 0 auto
+  h3
+    text-align: center
 
 .contacts-info
   padding: 0 0 0 20px
@@ -809,7 +841,6 @@ footer
   font-size: 24px
   color: #000
   margin: 0 12px 0 0
-
   &:last-child
     margin: 0
 
@@ -820,7 +851,7 @@ footer
     min-width: 24px
     margin: 0 8px 0 0
     fill: $accent
-
+    color: $accent
   &:hover
     color: $accent
 
@@ -1296,7 +1327,26 @@ footer
 
     .profile-info__links
       font-size: 18px
+  .btn-danger-my
+    margin: 10px auto 0
 
+.mailbox-controls
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  width: 100%
+  .checkbox-toggle
+    margin: 0 10px 0 0
+
+.table-striped
+  td
+    font-size: 14px
+
+.icheck-primary
+  width: 30px
+  min-width: 30px
+  input
+    height: 30px
 
 .user-menu-title
   font-size: 20px
@@ -1636,6 +1686,106 @@ footer
   .btn
     margin: 0 auto
 
+
+
+.table-prices
+  width: 100%
+  display: flex
+  align-items: stretch
+  flex-direction: row
+  align-content: stretch
+  justify-content: space-between
+  flex-wrap: wrap
+  border: none
+  margin: 20px 0 0
+
+  .tr
+    display: flex
+    align-items: stretch
+    flex-direction: column
+    align-content: stretch
+    width: calc(25% - 10px)
+    background: #fff
+    transition: all 0.2s linear
+    border: 1px solid #dee2e6
+    padding: 5px
+
+    &:hover
+      box-shadow: 0px 3px 3px 0px #888888
+
+
+  .tr-body .td
+    width: 100%
+    min-height: 55px
+    border-bottom: 1px solid #dee2e6
+    padding: 8px
+    text-align: center
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-wrap: wrap
+    font-size: 11px
+    overflow: hidden
+
+  .td:last-child
+    border-bottom: none
+
+  .tr:not(:first-child) .td
+    text-align: center
+
+.tr-head
+  color: #fff
+  background: #FF8800
+  text-transform: capitalize
+
+.tr-body
+  width: 100%
+
+.table-prices .btn
+  border-radius: 0
+  margin: 0 auto
+  padding: 10px 40px
+  border: 1px solid #34495E
+  color: #34495E
+  font-size: 15px
+  text-transform: uppercase
+  height: auto
+  width: 100%
+  position: relative
+  z-index: 1
+  vertical-align: middle
+  transform: translateZ(0)
+  box-shadow: 0 0 1px transparent
+  -webkit-backface-visibility: hidden
+  backface-visibility: hidden
+  -moz-osx-font-smoothing: grayscale
+  transition-property: color
+  transition-duration: 0.5s
+  background: #fff
+
+  &:before
+    content: ""
+    position: absolute
+    z-index: -1
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background: #34495E
+    transform: scaleX(0)
+    transform-origin: 0 50%
+    transition-property: transform
+    transition-duration: 0.5s
+    transition-timing-function: ease-out
+
+  &:hover, &:focus
+    color: #fff
+    background: transparent
+
+  &:hover:before, &:focus:before
+    transform: scaleX(1)
+    transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66)
+
 .links-favorite.active
   .svg-icon
     fill: $accent
@@ -1657,17 +1807,18 @@ footer
   text-transform: uppercase
   padding: 10px
   width: 100%
-  background: #ccc
+  //background: #ccc
   font-size: 15px
 
 .price-tariffs
   display: flex
   align-items: flex-start
   justify-content: center
-  margin: 10px auto 30px
+  margin: 10px auto
   text-align: center
   font-size: 30px
   font-weight: 700
+  border-top: 2px solid #c56500
   .currency
     font-weight: normal
     font-size: 20px
@@ -1675,7 +1826,6 @@ footer
 
 .footer-tariffs
   width: 100%
-  background: #ccc
   padding: 10px
   text-align: center
 
@@ -1713,6 +1863,10 @@ footer
   &:after
     transform: rotate(135deg)
 
+.recapcha
+  margin: 0 auto 10px
+  text-align: center
+
 .form-modal
   input
     font-size: 14px
@@ -1734,6 +1888,10 @@ footer
   .input-title
     font-size: 14px
     margin: 0 0 5px
+  a.btn
+    margin: 10px auto 0
+    &:last-child
+      margin: 5px auto 0
 
 .consent
   font-size: 14px
@@ -1745,6 +1903,90 @@ footer
 
 .color-accent
   color: $accent
+
+.d-inline
+  display: inline-block
+
+.checkbox
+  display: flex
+  align-items: center
+  width: 100%
+
+.checkbox-inp
+  display: none
+
+.custom-checkbox.checkbox-inp + label
+  position: relative
+  display: flex
+  align-items: center
+  &:before
+    content: ''
+    display: inline-block
+    width: 1.5em
+    min-width: 1.5em
+    height: 1.5em
+    border: 1px solid #adb5bd
+      radius: 0.25em
+    margin-right: 0.5em
+
+//.form-profile
+.form-profile-box
+  margin: 0 0 40px
+  h3
+    font-size: 22px
+    font-weight: 300
+    margin: 0 0 20px
+  .box-profile
+    padding: 0
+    max-width: 200px
+    width: 100%
+  textarea
+    height: 100px
+    margin: 10px 0 0
+
+.form-profile
+  .btn-group
+    .btn
+      max-width: 48%
+      width: 100%
+
+.custom-file-input, .custom-file-label
+  outline: none
+  color: #000
+  box-shadow: none
+  border: 1px solid #FF8800
+    radius: 5px
+  &:hover, &:focus
+    outline: none
+    box-shadow: none
+
+.custom-file-input:focus~.custom-file-label
+  box-shadow: none
+
+.custom-file-label::after
+  background: $accent
+  color: #fff
+  cursor: pointer
+
+.form-publication .form-group label sup
+  color: #FF0000
+
+.select2-container--default .select2-selection--single
+  border: 1px solid $accent
+    radius: 5px
+
+.select2-container .select2-selection--single
+  height: 36px
+
+.select2-container--default .select2-selection--single .select2-selection__rendered
+  line-height: 36px
+
+.select2-container--default .select2-selection--single .select2-selection__arrow
+  height: 100%
+
+.select2-container .select2-selection--single .select2-selection__rendered
+  padding-left: 10px
+  color: #000
 
 @import "media"
 // Всегда в конце

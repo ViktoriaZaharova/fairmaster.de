@@ -1,3 +1,9 @@
+$('.js-example-basic-single').select2({
+    width: '100%',
+    "element": HTMLOptGroupElement
+});
+
+
 $('.btn-burger').on('click', function (e) {
     e.preventDefault();
     $('.mobile-menu').fadeToggle();
