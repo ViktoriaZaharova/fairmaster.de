@@ -205,3 +205,39 @@ $(document).ready(function () {
         content.addClass('active'); // 4
     })
 });
+
+$(function () {
+    $('[data-toggle="popover"]').popover({
+        trigger: 'focus'
+    });
+});
+
+$(document).ready(function () {
+
+    var imagesloader = $('[data-type=imagesloader]').imagesloader({
+        // options here
+    });
+
+    //Form
+    $frm = $('#frm');
+    // Form submit
+    $frm.submit(function (e) {
+        var $form = $(this);
+        var files = imagesloader.data('format.imagesloader').AttachmentArray;
+        var il = imagesloader.data('format.imagesloader');
+        if (il.CheckValidity())
+            alert('Upload ' + files.length + ' files');
+        e.preventDefault();
+        e.stopPropagation();
+    });
+
+    var imagesloader = $('[data-type=imagesloader]').imagesloader({
+        imagesToLoad: [
+            {"Url":"1.jpg","Name":"Image1"},
+            {"Url":"2.jpg","Name":"Image2"}
+            // more images here
+        ]
+    });
+
+});
+

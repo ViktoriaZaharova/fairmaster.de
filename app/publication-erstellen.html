@@ -39,7 +39,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
         integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"/>
-  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet"/>
   <link rel="stylesheet" href="css/jquery.imagesloader.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -244,7 +244,7 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <div class="dropdown-menu-img"><img src="img/public7.jpeg" alt=""></div>
+                        <div class="dropdown-menu-img"><img src="img/cat0.1.png" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
                         <ul class="submenu">
@@ -411,7 +411,7 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <div class="dropdown-menu-img"><img src="img/menu1.jpg" alt=""></div>
+                        <div class="dropdown-menu-img"><img src="img/cat1v4.1.png" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
                         <ul class="submenu">
@@ -475,7 +475,7 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <div class="dropdown-menu-img"><img src="img/menu2.jpg" alt=""></div>
+                        <div class="dropdown-menu-img"><img src="img/cat2v2.1.png" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
                         <ul class="submenu">
@@ -539,7 +539,7 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <div class="dropdown-menu-img"><img src="img/menu2.jpg" alt=""></div>
+                        <div class="dropdown-menu-img"><img src="img/cat3.1.png" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
                         <ul class="submenu">
@@ -603,7 +603,7 @@
                   <div class="dropdown-menu">
                     <div class="dropdown-menu-wrapper">
                       <div class="dropdown-menu-col">
-                        <div class="dropdown-menu-img"><img src="img/menu2.jpg" alt=""></div>
+                        <div class="dropdown-menu-img"><img src="img/cat4.1.png" alt=""></div>
                       </div>
                       <div class="dropdown-menu-col">
                         <ul class="submenu">
@@ -681,7 +681,7 @@
             </div>
             <ul class="user-menu">
               <li><a href="#">Mein Konto</a></li>
-              <li><a href="edit-password.html">Konto verwalten</a></li>
+              <li><a href="manage-account.html">Konto verwalten</a></li>
               <li><a href="mail-list.html">Nachrichten</a></li>
               <li><a href="profile-edit.html">Profil verwalten</a></li>
               <li><a href="product-list.html">Publikationen verwalten </a></li>
@@ -689,9 +689,25 @@
             </ul>
           </div>
           <div class="col-12 col-lg-9">
+
             <div class="row">
-              <div class="col-12"><h1>Publikation erstellen</h1></div>
+              <div class="col-12 col-lg-5">
+                <h1>Publikation erstellen
+                  <button type="button" class="btn btn-lg btn-danger popover-btn" data-toggle="popover" title="Popover title"
+                          data-content="And here's some amazing content. It's very engaging. Right?">?
+                  </button>
+                </h1>
+              </div>
+
+              <div class="col-12 col-lg-7">
+                <div class="btn-group">
+                  <a href="#" class="btn btn-border color-red btn-submitings">Speichern</a>
+                  <a href="#" class="btn btn-border color-green">Zurück zur
+                    Liste</a>
+                </div>
+              </div>
             </div>
+
             <div class="row">
               <div class="col-12">
                 <form method="post" class="form form-user form-publication form-profile">
@@ -712,7 +728,8 @@
                           <div class="row align-items-center">
                             <div class="col-12 col-md-4"><label>Kategorie <sup>*</sup></label></div>
                             <div class="col-12 col-md-8">
-                              <select class="form-control select2 js-example-basic-single" name="category_id" required="">
+                              <select class="form-control select2 js-example-basic-single" name="category_id"
+                                      required="">
                                 <optgroup label="Handwerker &amp; Gewerbebetriebe">
                                   <option value="13" class="cat-tree-item" title="Badsanierung"
                                           data-content="<span style='margin-left: 20px;'></span> | - <span class='cat-tree-item' style='margin-left: 0px;'><i class='fa fa-folder-o'></i>  <img src='/media/image/cache/no_image-100x100.png' width='20' height='20'> Badsanierung</span>"
@@ -1582,18 +1599,22 @@
                         <div class="form-group">
                           <div class="row">
                             <div class="col-12">
-                              <h3 class="card-title">Bildergalerie:</h3>
+                              <h3 class="card-title">Bildergalerie: <button type="button" class="btn btn-lg btn-danger popover-btn" data-toggle="popover" title="Popover title"
+                                                                            data-content="And here's some amazing content. It's very engaging. Right?">?
+                              </button></h3>
                             </div>
                             <div class="col-12">
+
                               <!--Image container -->
-                              <div class="row" data-type="imagesloader" data-errorformat="Accepted file formats"
-                                   data-errorsize="Maximum size accepted" data-errorduplicate="File already loaded"
+                              <div class="row"
+                                   data-type="imagesloader"
+                                   data-errorformat="Accepted file formats"
+                                   data-errorsize="Maximum size accepted"
+                                   data-errorduplicate="File already loaded"
                                    data-errormaxfiles="Maximum number of images you can upload"
                                    data-errorminfiles="Minimum number of images to upload"
                                    data-modifyimagetext="Modify immage">
-
                                 <!-- Progress bar -->
-
                                 <div class="col-12 order-1 mt-2">
                                   <div data-type="progress" class="progress" style="height: 25px; display:none;">
                                     <div data-type="progressBar"
@@ -1602,78 +1623,72 @@
                                     </div>
                                   </div>
                                 </div>
-
                                 <!-- Model -->
-
                                 <div data-type="image-model" class="col-4 pl-2 pr-2 pt-2"
                                      style="max-width:200px; display:none;">
                                   <div class="ratio-box text-center" data-type="image-ratio-box">
                                     <img data-type="noimage"
                                          class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded"
-                                         src="img/photo-camera-gray.svg"
-                                         style="cursor:pointer;">
+                                         src="./img/photo-camera-gray.svg" style="cursor:pointer;">
                                     <div data-type="loading" class="img-loading" style="color:#218838; display:none;">
                                       <span class="fa fa-2x fa-spin fa-spinner"></span>
                                     </div>
                                     <img data-type="preview"
-                                         class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src=""
-                                         style="display: none; cursor: default;">
-                                    <span class="badge badge-pill badge-success p-2 w-50 main-tag" style="display:none;">Main</span>
+                                         class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded"
+                                         src="" style="display: none; cursor: default;">
+                                    <span class="badge badge-pill badge-success p-2 w-50 main-tag"
+                                          style="display:none;">Main</span>
                                   </div>
-
                                   <!-- Buttons -->
-
                                   <div data-type="image-buttons" class="row justify-content-center mt-2">
-                                    <button data-type="add" class="btn btn-outline-success" type="button"><span
+                                    <button data-type="add" class="btn btn-outline-success btn-border color-green"
+                                            type="button"><span
                                         class="fa fa-camera mr-2"></span>Add
                                     </button>
-                                    <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0"
+                                    <button data-type="btn-modify" type="button"
+                                            class="btn btn-outline-success m-0 btn-border color-green"
                                             data-toggle="popover" data-placement="right" style="display:none;">
                                       <span class="fa fa-pencil-alt mr-2"></span>Modify
                                     </button>
                                   </div>
                                 </div>
-
                                 <!-- Popover operations -->
-
                                 <div data-type="popover-model" style="display:none">
                                   <div data-type="popover" class="ml-3 mr-3" style="min-width:150px;">
                                     <div class="row">
                                       <div class="col p-0">
-                                        <button data-operation="main" class="btn btn-block btn-success btn-sm rounded-pill"
-                                                type="button"><span class="fa fa-angle-double-up mr-2"></span>Main
+                                        <button data-operation="main"
+                                                class="btn btn-block btn-success btn-sm rounded-pill" type="button">
+                                          <span class="fa fa-angle-double-up mr-2"></span>Main
                                         </button>
                                       </div>
                                     </div>
-
                                     <div class="row mt-2">
                                       <div class="col-6 p-0 pr-1">
                                         <button data-operation="left"
-                                                class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">
-                                          <span class="fa fa-angle-left mr-2"></span>Left
+                                                class="btn btn-block btn-outline-success btn-sm rounded-pill"
+                                                type="button"><span class="fa fa-angle-left mr-2"></span>Left
                                         </button>
                                       </div>
                                       <div class="col-6 p-0 pl-1">
                                         <button data-operation="right"
-                                                class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">
-                                          Right<span class="fa fa-angle-right ml-2"></span></button>
+                                                class="btn btn-block btn-outline-success btn-sm rounded-pill"
+                                                type="button">Right<span class="fa fa-angle-right ml-2"></span></button>
                                       </div>
                                     </div>
-
                                     <div class="row mt-2">
                                       <div class="col-6 p-0 pr-1">
                                         <button data-operation="rotateanticlockwise"
-                                                class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">
-                                          <span class="fas fa-undo-alt mr-2"></span>Rotate
+                                                class="btn btn-block btn-outline-success btn-sm rounded-pill"
+                                                type="button"><span class="fas fa-undo-alt mr-2"></span>Rotate
                                         </button>
                                       </div>
                                       <div class="col-6 p-0 pl-1">
                                         <button data-operation="rotateclockwise"
-                                                class="btn btn-block btn-outline-success btn-sm rounded-pill" type="button">
-                                          Rotate<span class="fas fa-redo-alt ml-2"></span></button>
+                                                class="btn btn-block btn-outline-success btn-sm rounded-pill"
+                                                type="button">Rotate<span class="fas fa-redo-alt ml-2"></span></button>
                                       </div>
                                     </div>
-
                                     <div class="row mt-2">
                                       <button data-operation="remove" class="btn btn-outline-danger btn-sm btn-block"
                                               type="button"><span class="fa fa-times mr-2"></span>Remove
@@ -1681,37 +1696,15 @@
                                     </div>
                                   </div>
                                 </div>
-                                <div data-type="image-add" class="col-12 col-lg-5" style="max-width: 200px;">
-                                  <div class="ratio-box text-center" data-type="image-ratio-box">
-                                    <img data-type="noimage"
-                                         class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded"
-                                         src="img/photo-camera-gray.svg"
-                                         style="cursor:pointer;">
-                                    <div data-type="loading" class="img-loading" style="color:#218838; display:none;">
-                                      <span class="fa fa-2x fa-spin fa-spinner"></span>
-                                    </div>
-                                    <img data-type="preview"
-                                         class="btn btn-light ratio-img img-fluid p-2 image border dashed rounded" src=""
-                                         style="display: none; cursor: default;">
-                                    <span class="badge badge-pill badge-success p-2 w-50 main-tag" style="display:none;">Main</span>
-                                  </div>
-
-                                  <!-- Buttons -->
-
-                                  <div data-type="image-buttons" class="row justify-content-center mt-2">
-                                    <button data-type="add" class="btn btn-outline-success btn-border" type="button"><span
-                                        class="fa fa-camera mr-2"></span>Add
-                                    </button>
-                                    <button data-type="btn-modify" type="button" class="btn btn-outline-success m-0 btn-border"
-                                            data-toggle="popover" data-placement="right" style="display:none;">
-                                      <span class="fa fa-pencil-alt mr-2"></span>Modify
-                                    </button>
-                                  </div>
+                              </div>
+                              <div class="form-group row">
+                                <div class="input-group">
+                                  <!--Hidden file input for images-->
+                                  <input id="files" type="file" name="files[]" data-button="" multiple=""
+                                         accept="image/jpeg, image/png, image/gif," style="display:none;">
                                 </div>
                               </div>
-                              <button type="submit" class="btn btn-primary btn-accent">Speichern</button>
 
-                              <!-- Upload Button -->
                             </div>
                           </div>
                         </div>
@@ -1770,7 +1763,9 @@
                         <div class="form-group">
                           <div class="row align-items-center">
                             <div class="col-12">
-                              <h3 class="card-title">Angaben zu der Publikation:</h3>
+                              <h3 class="card-title">Angaben zu der Publikation: <button type="button" class="btn btn-lg btn-danger popover-btn" data-toggle="popover" title="Popover title"
+                                                                                         data-content="And here's some amazing content. It's very engaging. Right?">?
+                              </button></h3>
                             </div>
 
                             <div class="col-12 col-md-4"><label>Beschreibung:</label></div>
