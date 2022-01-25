@@ -403,6 +403,7 @@ strong
   display: none
   box-shadow: 0 10px 10px rgba(#000, .3)
   width: 100%
+  z-index: 1021
 
 .dropdown-menu-wrapper
   width: 100%
@@ -1905,7 +1906,7 @@ footer
   align-items: center
   width: 100%
 
-.checkbox-inp
+.checkbox-inp, .inp-check
   display: none
 
 .custom-checkbox.checkbox-inp + label
@@ -1921,6 +1922,8 @@ footer
     border: 1px solid #adb5bd
       radius: 0.25em
     margin-right: 0.5em
+
+
 
 //.form-profile
 .form-profile-box
@@ -1988,6 +1991,303 @@ footer
   min-width: 24px
   display: inline-flex
   font-size: 14px
+
+.card-secondary-top
+  margin: 0 0 30px
+  border: none
+    radius: 0
+  padding: 0
+
+.card-secondary__head
+  font-size: 22px
+  font-weight: 300
+  h3
+    margin: 0
+
+.card-secondary__body
+  padding: 20px
+  width: 100%
+
+.card-secondary__row
+  margin: 0 0 20px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+  h4
+    font-size: 18px
+    font-weight: 300
+    margin: 0 10px 0 0
+
+.ribbon-wrapper
+  overflow: hidden
+  position: absolute
+  z-index: 10
+  right: -2px
+  top: -2px
+  .ribbon
+    box-shadow: 0 0 3px rgba(0,0,0, .3)
+    text-shadow: 0 -1px 0 rgba(0,0,0, .4)
+    padding: .375rem 0
+    line-height: 100%
+    font-size: .8rem
+    transform: rotate(45deg)
+    width: 90px
+    top: 10px
+    text-align: center
+    position: relative
+    text-transform: uppercase
+
+.ribbon-wrapper.ribbon-lg
+  width: 120px
+  height: 120px
+  .ribbon
+    top: 26px
+    width: 160px
+
+.card-secondary__price
+  font-size: 22px
+  font-weight: 300
+  line-height: 26px
+
+
+.text-muted
+  color: #6c757d
+
+.card-secondary__row
+  .select2-container
+    max-width: 200px
+
+.bootstrap-duallistbox-container .info
+  font-size: 11px
+  margin-bottom: 5px
+  display: inline-block
+
+.info-container span
+  min-height: 48px
+
+
+.checkbox
+  display: flex
+  align-items: flex-start
+  position: relative
+  justify-content: center
+
+.inp-check
+  display: none
+
+.checkbox-custom:before
+  content: ''
+  position: absolute
+  left: 50%
+  top: 50%
+  transform: translate(-50%, -50%)
+  width: 10px
+  height: 10px
+
+.checkbox-custom
+  width: 20px
+  height: 20px
+  position: relative
+  min-width: 20px
+  margin: 0 10px 0 0
+  border: 1px solid #FF8800
+
+.inp-check:checked + .checkbox-custom:before
+  background: #FF8800
+
+.btn-link
+  margin: 0 auto
+  &:hover
+    text-decoration: none
+
+.bootstrap-duallistbox-container .buttons .btn
+  width: calc(50% - 20px)
+
+.bootstrap-duallistbox-container .buttons
+  width: 100%
+  margin-bottom: 1px
+
+select[multiple]
+  option
+    background: transparent
+
+.packages-form
+  select[multiple]
+    min-height: 300px
+    border-radius: 0
+
+.input-group-text
+  padding: .325rem .75rem
+
+.custom-control-label::before, .custom-control-label::after
+  top: 2px
+
+.needs-validation
+  small.text-muted
+    font-size: 12px
+  .btn-submit
+    max-width: none
+    width: 100%
+
+.input-group-append
+  .btn
+    height: 36px
+    padding: 0 10px
+
+//data table bootstrap
+table.dataTable tbody
+  td.select-checkbox, th.select-checkbox
+    position: relative
+
+table.dataTable tbody
+  td.select-checkbox
+    &:after, &:before
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 12px
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+  th.select-checkbox
+    &:after, &:before
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 12px
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+table.dataTable tbody
+  td.select-checkbox:before, th.select-checkbox:before
+    content: ' '
+    border: 1px solid #000
+    -webkit-border-radius: 3px
+    border-radius: 3px
+
+table.dataTable tbody td.select-checkbox:before, table.dataTable tbody th.select-checkbox:before, table.dataTable tr.selected td.select-checkbox:after, table.dataTable tr.selected th.select-checkbox:after
+  margin: 0
+
+table.dataTable tbody
+  td.select-checkbox
+    &:after, &:before
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 12px
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+  th.select-checkbox
+    &:after, &:before
+      display: block
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%,-50%)
+      width: 12px
+      height: 12px
+      -webkit-box-sizing: border-box
+      box-sizing: border-box
+
+table.dataTable tr.selected
+  td.select-checkbox:after, th.select-checkbox:after
+    content: "✓"
+    text-align: center
+    text-shadow: 1px 1px #b0bed9, -1px -1px #b0bed9, 1px -1px #b0bed9, -1px 1px #b0bed9
+    margin-top: -8px
+
+div.dataTables_wrapper div.dataTables_info, div.dataTables_wrapper div.dataTables_paginate
+  padding: 0
+
+table.dataTable
+  margin: 30px 0
+  tfoot
+    font-size: 14px
+    font-weight: 500
+  thead
+    background: $accent
+    color: #fff
+    font-size: 16px
+    font-weight: 500
+
+table.dataTable thead th, table.dataTable thead td
+  border:
+    bottom: 1px solid $btn
+
+table.dataTable tfoot th, table.dataTable tfoot td
+  border-top: 1px solid $btn
+
+.dataTables_info
+  font-size: 14px
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  float: none
+
+.dataTables_paginate
+  width: 100%
+  margin: 20px auto 0
+  float: none !important
+  text-align: center
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  .page-item.active .page-link
+    background: $accent
+    color: #fff
+    border-color: $accent
+  .page-link
+    color: #333
+
+.table-striped tbody tr:nth-of-type(odd)
+  background: rgba($accent, .3)
+
+.dataTables_wrapper .dataTables_paginate .paginate_button
+  min-width: 30px
+  padding: 5px 10px
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current, .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover
+  background: $accent
+  color: #fff !important
+  border-color: $accent
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover
+  background: $btn
+  color: #333
+  border-color: $btn
+
+.dataTables_wrapper .dataTables_length, .dataTables_wrapper .dataTables_filter
+  width: 50%
+  margin: 0 0 20px
+  label
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+  select
+    max-width: 100px
+    margin: 0 5px
+    background: #fff url("../img/arrow-select.svg") no-repeat calc(100% - 10px) center
+      size: 15px
+  input
+    max-width: 200px
+    margin: 0 0 0 5px
+
+div.dataTables_wrapper span.select-info
+  margin-left: 20px
+  font-weight: 500
 
 @import "media"
 // Всегда в конце
