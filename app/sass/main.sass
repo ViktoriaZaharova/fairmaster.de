@@ -413,8 +413,11 @@ strong
 
 .dropdown-menu-col
   padding: 0 20px 0 0
-  width: 20%
-  
+  //width: 20%
+  flex: auto
+  &:first-child
+    min-width: 20%
+    max-width: 20%
 
 .dropdown-menu-img
   width: 100%
@@ -461,9 +464,7 @@ strong
 //footer
 footer
   flex: 0 0 auto
-  .list-social
-    min-height: 37px
-    align-items: flex-end
+
 
 .footer-bottom
   padding: 8px 0
@@ -630,6 +631,11 @@ footer
   h3
     text-align: center
 
+.form-login
+  .g-recaptcha
+    >div
+      margin: 0 auto
+
 .contacts-info
   padding: 0 0 0 20px
   font-size: 14px
@@ -716,7 +722,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
-
+  font-size: 26px
   li
     margin: 0 13px 0 0
 
@@ -730,6 +736,7 @@ footer
       display: flex
       align-items: center
       justify-content: center
+      color: $accent
 
 .share
   display: flex
@@ -774,6 +781,8 @@ footer
 
   .box-text
     color: #000
+  .list-rating
+    font-size: 18px
 
 .links-modals
   display: flex
@@ -785,7 +794,7 @@ footer
   display: flex
   align-items: center
   flex-wrap: wrap
-
+  font-size: 13px
   li
     width: 24px
     height: 24px
@@ -795,9 +804,11 @@ footer
     justify-content: center
     fill: $accent
     stroke: $accent
+    color: $accent
   .star0
     fill: #ccc
     stroke: #ccc
+    color: #ccc
 
 .img-avatar
   display: flex
@@ -835,6 +846,7 @@ footer
     padding: 0
     margin: 4px 0 14px
 
+
 .profile-info__links
   display: flex
   align-items: center
@@ -842,6 +854,7 @@ footer
   font-size: 24px
   color: #000
   margin: 0 12px 0 0
+
   &:last-child
     margin: 0
 
@@ -855,6 +868,26 @@ footer
     color: $accent
   &:hover
     color: $accent
+  i
+    color: $accent
+    margin: 0 5px 0 0
+
+  .color-green
+    i
+      color: green
+
+
+.profile-info__links-delete
+  .color-red
+    color: #BB0000
+    i
+      color: #BB0000
+
+.profile-info__links-btn
+  width: 100%
+  margin: 0 0 4px
+  &:last-child
+    margin: 0
 
 //publication
 .publication
@@ -914,6 +947,10 @@ footer
     height: 100%
     object-fit: cover
 
+.publication-content
+  .list-rating
+    font-size: 20px
+
 .btn-publication
   width: 100%
   max-width: none
@@ -929,6 +966,8 @@ footer
     font-weight: normal
     width: auto
     margin: 0 10px 0 0
+  .list-rating
+    font-size: 20px
 
 .profile-reviews__head
   width: 100%
@@ -963,6 +1002,7 @@ footer
     padding: 0 0 0 8px
 
   .list-rating
+    font-size: 13px
     li
       width: 14px
       height: 14px
@@ -1521,6 +1561,8 @@ footer
   align-items: center
   justify-content: center
   padding: 8px
+  color: $accent
+  transition: .3s ease
   svg
     fill: $accent
 
@@ -1616,9 +1658,10 @@ footer
   right: 10px
   top: 10px
   z-index: 1
+  color: $accent
   &:hover, &:focus
     fill: $accent
-
+    color: $btn
 
 
 .publication-slider
@@ -2253,7 +2296,7 @@ table.dataTable tfoot th, table.dataTable tfoot td
     color: #333
 
 .table-striped tbody tr:nth-of-type(odd)
-  background: rgba($accent, .3)
+  background: rgb(241,241,241)
 
 .dataTables_wrapper .dataTables_paginate .paginate_button
   min-width: 30px
