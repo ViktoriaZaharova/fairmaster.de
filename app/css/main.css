@@ -1007,9 +1007,16 @@ footer {
 
 .profile-info__links-btn {
   width: 100%;
-  margin: 0 0 4px; }
+  margin: 0 0 4px;
+  font-size: 20px; }
   .profile-info__links-btn:last-child {
     margin: 0; }
+  .profile-info__links-btn .color-red i {
+    color: red; }
+
+.notPublicItem .svg-icon i {
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg); }
 
 .publication {
   margin: 0 0 29px; }
@@ -1553,6 +1560,8 @@ footer {
     margin: 0; }
   .user-page .card-product .profile-info__links {
     font-size: 18px; }
+  .user-page .card-product .profile-info__links-btn {
+    font-size: 20px; }
   .user-page .btn-danger-my {
     margin: 10px auto 0; }
 
