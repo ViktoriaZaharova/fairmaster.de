@@ -1014,9 +1014,8 @@ footer {
   .profile-info__links-btn .color-red i {
     color: red; }
 
-.notPublicItem .svg-icon i {
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg); }
+.icon-hidden {
+  display: none; }
 
 .publication {
   margin: 0 0 29px; }
